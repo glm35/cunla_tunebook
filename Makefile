@@ -1,4 +1,9 @@
-LILY_PREFIX=/usr/bin
+SHELL=/bin/bash
+# Note: by default, GNU Make uses /bin/sh which is /bin/dash on Debian
+# systems, which causes some surprises with the commands. For instance,
+# stdout+stderr IO redirection with "&>" does not work with dash.
+
+LILY_PREFIX=/usr/local/bin
 #LILY_PREFIX=/opt/bin
 LILYPOND_BOOK=${LILY_PREFIX}/lilypond-book
 ABC2LY=${LILY_PREFIX}/abc2ly
@@ -31,16 +36,7 @@ ${stage2_outdir}/$(target).dvi : ${stage1_outdir} ${stage2_outdir} ${stage2_outd
 
 ${stage2_outdir}/${target}.tex : ${stage1_outdir}/${target}.tex ${lyfiles} ${lyfiles2}
 	@echo [LILYPOND-BOOK `${LILYPOND_BOOK} --version`] ${stage1_outdir}/${target}.tex
-	@cd ${stage2_outdir} && ${LILYPOND_BOOK} ../${stage1_outdir}/${target}.tex &>lilypond-book.log
-
-${stage1_outdir}/%.ly : ${src}/%.abc
-	@echo [ABC2LY] $<
-	@${ABC2LY} -o $@ $< 2>${stage1_outdir}/abc2ly.log
-	@cat ${stage1_outdir}/abc2ly.log |grep Warning |grep -v "Q specification" || true
-# Note:
-# - split into two commands to be able to filter abc2ly output without losing
-# the return code
-# - we don't care about grep return code
+	cd ${stage2_outdir} && ${LILYPOND_BOOK} ../${stage1_outdir}/${target}.tex &> lilypond-book.log
 
 ${stage1_outdir}/%.ly : ${src}/%.ly
 #	@echo [CONVERT-LY] $<
@@ -50,6 +46,15 @@ ${stage1_outdir}/%.ly : ${src}/%.ly
 # Note: convert-ly looses the encoding (uses UTF-8?)
 # Note: invoking convert-ly does not work when the input version is the same
 # as the output version
+
+${stage1_outdir}/%.ly : ${src}/%.abc
+	@echo [ABC2LY] $<
+	@${ABC2LY} -o $@ $< 2>${stage1_outdir}/abc2ly.log
+	@cat ${stage1_outdir}/abc2ly.log |grep Warning |grep -v "Q specification" || true
+# Note:
+# - split into two commands to be able to filter abc2ly output without losing
+# the return code
+# - we don't care about grep return code
 
 ${stage1_outdir}/${target}.tex: ${lyfiles} ${lyfiles2} ${texfiles} ./metadata/${target}.tex ./metadata/guitar_chords.tex ./metadata/${target}-sets.txt ./tools/gen-tex-tunebook.py ./metadata/${target}-tunes.txt
 	@echo [GEN-TEX-TUNEBOOK]

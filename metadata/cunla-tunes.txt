@@ -23,11 +23,8 @@ sheila_coyle_s
 san_miguel_s
 rakish_paddy
 air_cretois
-the_flight_of_the_butterfly
-the_goat_island_reel
 brian_o_lynn
 cathal_mc_connell_s
-the_woods_of_the_old_limerick
 yemen
 the_isla_rant
 johnny_s_gone_to_france
@@ -37,7 +34,6 @@ air_moving
 an_cailin_deas_cruitenam_bo
 the_mountain_road
 the_humours_of_kilclogher
-the_kings_of_inishbofin
 garrevaques
 the_tinkerman_s_wife
 the_mistress_on_the_floor

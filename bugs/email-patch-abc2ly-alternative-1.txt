@@ -1,0 +1,20 @@
+Subject: [patch] abc2ly and alternatives 1/3
+
+This one fixes the problem that I reported to the bug-lilypond list:
+"bar missing before the first alternative".
+
+Gwenael
+
+diff --git a/scripts/abc2ly.py b/scripts/abc2ly.py
+index 2693817..605d82d 100644
+--- a/scripts/abc2ly.py
++++ b/scripts/abc2ly.py
+@@ -1098,7 +1098,7 @@ bar_dict = {
+ ':|' : '}',
+ '|:' : '\\repeat volta 2 {',
+ '::' : '} \\repeat volta 2 {',
+-'|1' : '} \\alternative{{',
++'|1' : '\\bar "|" } \\alternative{{',
+ '|2' : '} {',
+ ':|2' : '} {',
+ '|' :  '\\bar "|"'

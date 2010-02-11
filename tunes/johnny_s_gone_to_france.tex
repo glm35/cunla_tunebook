@@ -1,0 +1,22 @@
+On introduit ce morceau avec une partie rythmique sur les accords de ré et
+sol. Le violon joue sur le sol:
+
+\begin[fragment,staffsize=20,line-width=13.5\cm]{lilypond}
+  <<
+  \context ChordNames {
+    \time 2/2
+    d8 r8 ~ r4 ~ r4 d8 r8 | r1 | d8 r8 ~ r4 ~ r4 g4 ~ | g1 |
+  }
+  \context RhythmicStaff {
+    \time 2/2
+    \stemDown {
+      d8 r8 ~ r4 ~ r4 d8 r8 | r1 | d8 r8 ~ r4 ~ r4 g4 ~ | g1 |
+    }
+  }
+  >>
+\end{lilypond}
+
+Puis le pipe prend la mélodie et joue deux fois la partie A. Sur la partie B,
+il est rejoint par les autres instruments mélodiques.
+
+\tune

@@ -1,0 +1,80 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\usepackage{syntonly}
+%\syntaxonly % A commenter pour générer réellement le document
+
+\usepackage{gchords}
+
+
+%\author{G.~Lambrouin}
+\title{Tableau d'accords en Dropped D}
+\date{08 Février 2005}
+
+
+\begin{document}
+
+\maketitle
+
+% Fichier avec la définition des accords
+\input{../src/Chords}
+
+\section*{Accords pour jouer en Ré}
+
+\section*{Accords pour jouer en Sol}
+
+%% \hbox{$\backslash$GMaj $\backslash$Amin \\
+%% \GMaj \Amin \\}
+
+%% \hbox{\GMaj \Amin}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$\backslash$GMaj & $\backslash$Amin & $\backslash$AminpV & $\backslash$BminpVII & $\backslash$CMaj
+& $\backslash$DinG & $\backslash$Emin & $\backslash$DbFs \\
+\GMaj & \Amin & \AminpV & \BminpVII & \CMaj & \DinG & \Emin & \DbFs \\
+
+\hline
+$\backslash$Dva & $\backslash$EminpV & $\backslash$DpV & $\backslash$GpVII &
+$\backslash$Gva & $\backslash$Gvb & $\backslash$DpX & $\backslash$CpVIII \\
+\Dva & \EminpV & \DpV & \GpVII & \Gva & \Gvb & \DpX & \CpVIII \\
+\hline
+\end{tabular}
+
+\section*{Accords pour jouer en La}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$\backslash$AMaj & $\backslash$DMaj & $\backslash$EMaj & $\backslash$Fsmin & $\backslash$Bmin \\
+\AMaj & \DMaj & \EMaj & \Fsmin & \Bmin \\
+\hline
+\end{tabular}
+
+\section*{Accords pour jouer en La mixolydien}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$\backslash$Anotd & $\backslash$GbA & $\backslash$GbAva & $\backslash$AMajva &
+$\backslash$EmbA \\
+\Anotd & \GbA & \GbAva & \AMajva & \EmbA \\
+\hline
+\end{tabular}
+
+\section*{Accords pour jouer en La mineur}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+$\backslash$Aminva & $\backslash$GbAvb & $\backslash$Gvc \\
+\Aminva & \GbAvb & \Gvc \\
+\hline
+\end{tabular}
+
+\end{document}
+
+
+
+% TODO:
+% - utiliser le même espacement que la macro \chords de gchords (hbox)

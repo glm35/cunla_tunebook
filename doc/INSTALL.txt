@@ -1,0 +1,12 @@
+Requirements:
+
+LaTeX
+lilypond 2.11.26
+Perl
+
+gchords (http://www.aei.mpg.de/~peekas/gchords/). Installation:
+
+	$ wget http://www.aei.mpg.de/~peekas/gchords/gchords.sty
+	# mkdir -p /usr/local/share/texmf/tex/latex
+	# cp gchords.sty /usr/local/share/texmf/tex/latex
+	# texhash

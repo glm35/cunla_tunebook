@@ -1,0 +1,55 @@
+Subject: abc2ly: Several problems with alternatives
+
+> I'm not top posting.
+
+I have a few problems about repeats and alternatives with abc2ly in
+lilypond 2.11.28.
+
+
+Problem 1: bar missing before the first alternative
+
+X:1
+T:Bar missing before the first alternative
+K:C
+M:C
+|: C4 E4 |1 G4 B4 :|2 G4 A4 |
+
+In lilypond postscript output, there is no bar between measure 1 and
+measure 2.
+
+
+Problem 2: invalid abc2ly output when a new repeat follows a
+repeat/alternative sequence
+
+X:1
+T:Invalid conversion of repeat/alternative/repeat sequence
+K:C
+M:C
+|: C4 E4 |1 G4 B4 :|2 G4 A4
+|: D4 F4 | A4 c4 :|
+
+In abc2ly output, the alternative block is not closed before the second
+repeat block is opened: the second repeat block is nested in the second
+part of the alternative block. This generates a compilation error with
+lilypond.
+
+
+Problem 3: alternative block not closed before the end of the tune
+
+X:1
+T:Second alternative not closed before the end of the tune
+K:C
+M:C
+|: C4 E4 |1 G4 B4 :|2 G4 A4
+| B8 | c8 | d8 | e8 |
+
+In this example, in lilypond postscript output, the second alternative
+line over the staff spans until the end of the tune. This is not
+incorrect, but this is not really what I expect: I expect the second
+alternative to last as long as the first one.
+
+
+Gwenael
+
+PS: I have some patches that fix these problems for me. I'll post them
+to lilypond-devel.

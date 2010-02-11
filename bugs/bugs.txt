@@ -1,0 +1,186 @@
+0001	[abc2ly] ne comprend pas les formes longues des répétitions
+
+	abc2ly ne comprend pas |[1 et :|[2. Il faut mettre |1 et :|2
+
+
+0002	[abc2ly] Barre manquante avant la première alternative
+FIXED
+
+	Solution: ajouter la barre manquante dans le dictionnaire des
+	répétitions. Bug dans lilypond ou bug dans abc2ly?
+
+--- abc2ly-2.11.28.py   2007-08-02 14:31:33.000000000 +0200
++++ abc2ly-glm  2007-08-02 14:20:02.000000000 +0200
+@@ -1098,7 +1098,7 @@
+ ':|' : '}',
+ '|:' : '\\repeat volta 2 {',
+ '::' : '} \\repeat volta 2 {',
+-'|1' : '} \\alternative{{',
++'|1' : '\\bar "|" } \\alternative{{',
+ '|2' : '} {',
+ ':|2' : '} {',
+ '|' :  '\\bar "|"'
+
+
+0003	[abc2ly] Gestion incorrecte des alternatives lors de deux répétitions en série
+FIXED
+
+	Sortie incorrecte (plantage lilypond) quand on enchaîne une
+	répétition contenant une alternative avec une autre
+	répétition. Conséquence du bug 0004.
+
+	Problème: la première répétition n'est pas fermée.
+
+	Solution: si on est dans une alternative et que l'on rencontre
+	une nouvelle répétition, on ferme l'alternative.
+
+
+0004    [abc2ly] Deuxième alternative jamais fermée
+FIXED
+
+	Problème: quand il y a une alternative, la répétition n'est pas
+	fermée sauf si on arrive à la fin du morceau
+
+	Question: dans une alternative, est-ce que les 2 membres doivent
+	avoir la même durée?
+
+	Plus généralement sur les répétitions et les alternatives:
+	reproduire tous les exemples du manuel utilisateur (volta) en
+	ABC, et debugger abc2ly jusqu'à ce que tout passe.
+
+	Solution: fermer l'alternative automatiquement au bout de la
+	même durée que la première alternative. => il faut connaître la
+	durée de la première alternative, et il faut compter les
+	temps. Ce qui n'est pas simple.
+
+	Plus simplement, comme abc2ly force les répétitions sur des
+	mesures, on peut se contenter de compter les N mesures entre |1
+	et :|2, et de fermer automatiquement au bout de la Nième barre
+	de mesure rencontrée. BTW, à quoi sert |2?
+
+
+0005    [abc2ly] (TBC) \partial manquant
+
+	Problème: quand le fichier ne commence pas par une barre de
+	mesure
+
+
+0006	[abc2ly] Alternatives acceptées uniquement en limite de mesure
+
+	Problème: Le dictionnaire ne connaît pas les alternatives en
+	milieu de mesure [1. Voir comment se comporte le programme quand
+	on met une telle alternative.
+
+
+0007	[abc2ly] Affichage des warnings pas homogène
+
+	Problème: suivant le type de warning affiché par le script, on a
+	"Warning: bla bla" ou encore "Huh?  Don't understand". Celà ne
+	facilite pas le traitement automatique des warnings par un
+	script.
+
+
+0008	The fly of the butterfly, The goat island reel
+
+	1- anacrouse: croches pas liées
+	2- sauts de ligne au milieu des mesures
+	3- accords: antislash apparent
+
+	Problème: 1- et 2- : abc2ly ne génère pas la commande \partial.
+	On résoud le problème en éditant le fichier .ly à la main,
+	typiquement en ajoutant "\partial 4" quand il y a deux croches
+	en anacrouse.
+
+	Solution (abc2ly): si la musique ne commence pas par une barre,
+	on peut supposer qu'on a une anacrouse. Il faut alors compter le
+	nombre de temps, et insérer la commande "\partial". Risque de ne
+	pas être facile... Il faut pouvoir:
+
+	    o détecter le début du morceau.
+
+	    o compter les temps, en fonction du nombre de notes et de la
+	    durée par défaut.
+
+	    o insérer la commande \partial alors qu'on a déjà écrit les
+	    premières notes.
+
+
+0009	Type des morceaux (jig, reel) à mettre en minuscule dans l'index
+
+
+0010	[abc2ly] Collision d'accords
+
+	Les accords sont représentés sous la forme de "Text scripts",
+	texte placé au niveau d'une note au dessus (^) ou au dessous (_)
+	de la portée. Par défaut, ces indications ne modifient pas
+	l'espacement des notes, ce qui pose des problèmes de collision
+	quand deux accords longs sont rapprochés. Pour corriger le
+	problème, il faudrait préfixer la note avec \fatText.
+
+	Alternativement, utiliser le mode accord de lilypond, c'est bien
+	plus joli
+
+
+0011	[lilypond] Collision entre les reprises et les accords
+
+	La numérotation des reprises se collisionne avec les accords
+
+
+0012	[lilypond] Sortie midi incorrecte
+
+	Génération du fichier midi par lilypond: les répétitions ne sont
+	pas correctes (cf. 102-UnnamedSlipJig1.ly): la sortie papier est
+	correcte, mais pas la sortie MIDI.
+
+
+0013	Farewall to whalley range
+
+	217-FarewellTo.ly : lilypond génère un warning sur la durée des
+	accords, mais je ne vois pas comment exprimer la durée d'une
+	mesure complète en 9/8 autrement que par "ronde liée à croche"
+	(4 temps et demi).
+
+
+0014	[dvipdf] Problème avec les accords
+
+	Dans les accords des contextes chordNames de Lilypond, le # est
+	perdu lors de la conversion en pdf. Workaround: utiliser le
+	format ps.
+
+
+0015	Le nom du compositeur n'est pas aligné à droite
+SOLVED
+
+	Solution (d'après un mail sur lilypond-user): ajouter une chaîne
+	vide "" en paramètre à fill-line: elle sera placée à gauche, et
+	le compositeur sera placé à droite.
+
+	Exemple:
+
+	\begin{lilypond}
+	\paper {
+	  bookTitleMarkup = \markup {
+	    \fill-line {
+	      ""
+	      \fromproperty #'header:composer
+	    }
+	  }
+	}
+	\include ".././out.stage1/003-TheHeadlessTurkey.ly"
+	\end{lilypond}
+
+
+0016	The mountain road
+
+	"Problème" avec les alternatives: alternatives pas générées par
+	abc2ly-glm quand le morceau ne commence pas par une barre de
+	répétition ouvrante "|:".
+
+
+0017	Quand on modifie un fichier .abc, la partition n'est pas mise à
+	jour dans le document final.
+
+	Workaround: make clean; make
+
+	Remarque: les méta-données (titre, type, ...) sont bien mises à
+	jour.

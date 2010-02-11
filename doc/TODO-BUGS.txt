@@ -1,0 +1,23 @@
+
+==============================================================================
+	Tunebook TODO list
+==============================================================================
+
+Classement par ordre de priorité approximatif, du plus prioritaire au
+moins prioritaire
+
+- test/repeat/Makefile: en cas d'erreur ou warning de abc2ly sur un
+fichier, ne pas bloquer la fabrication du ps. Indiquer "Failed" sur le
+numéro du test si le fichier .ly n'existe pas (avec la source
+.abc). L'affichage de l'erreur serait un plus. Créer un fichier name.err
+avec la sortie d'erreur de abc2ly.
+
+- abc2ly: vérifier les bugs avec la 2.11.28. Poser les bugs sur la liste
+et présenter un patch par bug. Expliquer le système de test. Tarball sur
+mon site web?
+
+- compléter la liste des suites
+
+- morceaux jusqu'à juillet 2007
+
+- discographie automatique (à ajouter pour les sources .ly)

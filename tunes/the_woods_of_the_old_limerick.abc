@@ -1,0 +1,17 @@
+X:1
+T:The woods of the old Limerick
+R:Jig
+S:Sean Whelan (stage à Ti Kendalc'h, avril 2005)
+K:G
+M:6/8
+Q:140
+% partie A
+|: "G" BAG ABc | dBg fdc
+ | BAG ABc | "D" ADD DFA
+ | "G" BAG ABc | dBg fdc
+ | BAG ABc |1 "D" A/B/A/G/F "G" G2A :|2 "D" A/B/A/G/F "G" G2a
+% partie B
+|: "G" bgg gag | "D" fdd d2b
+ | c'aa fab | c'af "G" g2a
+ | bgg agf | gag edc
+ | BAG ABc |1 "D" A/B/A/G/F "G" G2a :|2 "D" A/B/A/G/F "G" G4 |]

@@ -1,0 +1,112 @@
+Subject: [patch] abc2ly and alternatives 2/3 and 3/3
+
+This one fixes the problems 2 and 3 that I reported to the bug-lilypond
+list.
+
+Problem 2: Invalid conversion of repeat/alternative/repeat sequence. This one is
+solved by closing the alternative block if we are in an alternative when
+we encounter a new repeat opener.
+
+Problem 3: Second alternative not closed before the end of the
+tune. With the ABC format, it is not possible to mark the end of the
+second alternative. So the problem is solved by counting the number of
+bars in the first alternative, and by closing the second alternative
+when that same number of bars has been reached.
+
+I tested this patch against a set of ABC files that I wrote. This does
+not prove that I did not introduce any regression...
+
+Gwenael
+
+diff --git a/scripts/abc2ly.py b/scripts/abc2ly.py
+index 605d82d..252f125 100644
+--- a/scripts/abc2ly.py
++++ b/scripts/abc2ly.py
+@@ -1111,10 +1111,11 @@ repeat_ender = ['::', ':|']
+ repeat_opener = ['::', '|:']
+ in_repeat = [''] * 8
+ doing_alternative = [''] * 8
++alternative_bar_count = [0] * 8
+ using_old = ''
+ 
+ def try_parse_bar (str,state):
+-    global in_repeat, doing_alternative, using_old
++    global in_repeat, doing_alternative, alternative_bar_count, using_old
+     do_curly = ''
+     bs = None
+     if current_voice_idx < 0:
+@@ -1128,12 +1129,27 @@ def try_parse_bar (str,state):
+             else:
+                 bs = "%s" % bar_dict[s]
+             str = str[trylen:]
++
+             if s in alternative_opener:
+                 if not in_repeat[current_voice_idx]:
+                     using_old = 't'
+                     bs = "\\bar \"%s\"" % old_bar_dict[s]
+                 else:
+-                    doing_alternative[current_voice_idx] = 't'
++                    if s == '|1':
++                        doing_alternative[current_voice_idx] = '1'
++                        alternative_bar_count[current_voice_idx] = 0
++                    else: # '|2' or ':|2'
++                        doing_alternative[current_voice_idx] = '2'
++                        alternative_bar_count[current_voice_idx] += 1
++            else:
++                if doing_alternative[current_voice_idx] == '1':
++                    alternative_bar_count[current_voice_idx] += 1
++                elif doing_alternative[current_voice_idx] == '2':
++                    alternative_bar_count[current_voice_idx] -= 1
++                    if alternative_bar_count[current_voice_idx] == 0:
++                        do_curly = '2'
++                        doing_alternative[current_voice_idx] = ''
++                        in_repeat[current_voice_idx] = ''
+ 
+             if s in repeat_ender:
+                 if not in_repeat[current_voice_idx]:
+@@ -1142,20 +1158,28 @@ def try_parse_bar (str,state):
+                     in_repeat[current_voice_idx] = ''
+                 else:
+                     if doing_alternative[current_voice_idx]:
+-                        do_curly = 't'
++                        do_curly = '1'
+                 if using_old:
+                     bs = "\\bar \"%s\"" % old_bar_dict[s]
+                 else:
+                     bs =  bar_dict[s]
+                 doing_alternative[current_voice_idx] = ''
+                 in_repeat[current_voice_idx] = ''
++                
+             if s in repeat_opener:
++                if doing_alternative[current_voice_idx]:
++                    doing_alternative[current_voice_idx] = ''
++                    if s == '::':
++                        do_curly = '1'
++                    else: # '|:'
++                        do_curly = '2'
+                 in_repeat[current_voice_idx] = 't'
+                 if using_old:
+                     bs = "\\bar \"%s\"" % old_bar_dict[s]
+                 else:
+                     bs =  bar_dict[s]
+             break
++
+     if str[:1] == '|':
+         state.next_bar = '|\n'
+         str = str[1:]
+@@ -1170,10 +1194,13 @@ def try_parse_bar (str,state):
+     if bs <> None:
+         clear_bar_acc(state)
+         close_beam_state(state)
+-        voices_append (bs)
+         if do_curly != '':
+-            voices_append("} ")
++            if do_curly == '2':
++                voices_append("} } ")
++            else:
++                voices_append("} ")
+             do_curly = ''
++        voices_append (bs)
+     return str
+ 
+ def try_parse_tie (str):

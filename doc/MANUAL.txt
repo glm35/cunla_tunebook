@@ -1,0 +1,26 @@
+Tunebook manual
+---------------
+
+Organisation du répertoire Tunebook:
+
+Format des morceaux:
+- abc de préférence (car le standard est plus stable)
+- lilypond en cas de problème bloquant (mais le format d'entrée varie souvent
+=> nécessite l'utilisation du script de conversion ly->ly, non testé, et qui
+peut introduire ses propres problèmes)
+
+Edition des morceaux:
+- abc directement
+- lilypond directement (indiquer systématiquement la version)
+- denemo, puis export abc, puis retouche abc
+
+Edition des fichiers abc
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Format d'une entrée discographie:
+
+  D:Auteur, "Titre", Année
+
+Exemple:
+
+  D:Nuala Kennedy, "The New Shoes", 2007

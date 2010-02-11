@@ -1,0 +1,56 @@
+#!/usr/bin/python
+
+# For each file in tunes/
+#     Create a underscore separated label without the leading number
+#     Rename the file label.ext
+#     Add an entry to metadata/tunes.txt (avoid duplicate entries)
+
+import os
+import string
+import re
+
+def convert_filename(file):
+    r = re.compile('^[0-9]+-([a-zA-Z0-9]+)\.([a-zA-Z]+)$')
+    res = r.match(file)
+    if not res:
+        return None, None
+
+    elems = []
+    elem = ''
+    for char in res.group(1):
+        if char in string.uppercase or char in string.digits:
+            if elem:
+                elems.append(elem)
+                elem = ''
+            char = char.lower()
+        elem = elem + char
+    if elem:
+        elems.append(elem)
+
+    return "_".join(elems), res.group(2)
+        
+
+def main():
+    labels = []
+
+    files = os.listdir("tunes")
+
+    for file in files:
+        label, ext = convert_filename(file)
+        if not label:
+            print "Skipping file/directory", file
+            continue
+        try:
+            labels.index(label + '\n')
+        except ValueError:
+            labels.append(label + '\n')
+
+        src = 'tunes/' + file
+        dst = 'tunes/' + label + '.' + ext
+        os.spawnl(os.P_WAIT, '/usr/bin/svn', 'svn', 'move', src, dst)
+
+    f = open('metadata/tunes.txt', 'w')
+    f.writelines(labels)
+    f.close()
+
+main()

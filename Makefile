@@ -3,14 +3,9 @@ SHELL=/bin/bash
 # systems, which causes some surprises with the commands. For instance,
 # stdout+stderr IO redirection with "&>" does not work with dash.
 
-LILY_PREFIX=/usr/local/bin
-#LILY_PREFIX=/opt/bin
-LILYPOND_BOOK=${LILY_PREFIX}/lilypond-book
-ABC2LY=${LILY_PREFIX}/abc2ly
-# Prb de format .ly avec cette version:
-#ABC2LY=~/Musique/tunebook/tools/abc2ly.py
-#ABC2LY=${LILY_PREFIX}/abc2ly-glm
-CONVERT_LY=${LILY_PREFIX}/convert-ly
+LILYPOND_BOOK=lilypond-book
+ABC2LY=abc4ly.py
+#CONVERT_LY=convert-ly
 
 # 2 cibles configurables: "cunla" (uniquement le répertoire cunla) et
 # "tunebook" (tout mon répertoire irlandais)

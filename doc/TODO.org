@@ -1,0 +1,43 @@
+* Cunla tunes
+** Objectif
+Recueil des airs joués avec Cunla. Mélodie uniquement (pas les accords,
+pas les commentaires). Classement par ordre approximatif
+d'apprentissage. Respecter l'ordre des suites.
+
+** Reste à faire
+*** Mise en page
+- +laisser lilypond afficher le titre, le type de morceau et le compositeur => plus de titre au sens latex+
+- +permettre d'avoir plusieurs morceaux par page => plus de saut de ligne automatique.+
+- augmenter l'espacement entre les morceaux
+- ne pas couper un morceau entre plusieurs pages
+- +augmenter la longueur des portées+
+
+*** Goodies
+- index alphabétique des airs (en ne tenant pas compte du déterminant:
+  "the", "a", ...
+- index alphabétique des airs par type (reel, jig, ..., autre)
+- discographie
+- statistiques (nombre d'airs, nombres d'airs par type, nombre d'airs
+  par compositeur, ...)
+- liste des airs qui ne sont pas dans une suite
+
+*** Build system
+- +extension d'un doc lilypond-book: .lytex+
+- mettre tous les fichiers générés dans un seul répertoire "out"
+
+*** Tunes
+- ajouter les airs manquants
+- vérifier que chaque air a un type (reel, jig, ...)
+- vérifier que chaque air a un compositeur (trad sinon)
+
+* Documentation
+** line-width & co
+http://www.mail-archive.com/lilypond-user@gnu.org/msg52466.html
+
+* Notes sur LaTeX et lilypond-book
+Pour définir la longueur de la portée: 
+- redéfinir les marges à l'aide du paquet latex "geometry"
+- regénérer tout le livre
+
+Remarque: dans mon cas, l'option line-width de lilypond-book ne
+fonctionne pas (avec et sans ragged-margin)

@@ -8,8 +8,8 @@ d'apprentissage. Respecter l'ordre des suites.
 *** Mise en page
 - +laisser lilypond afficher le titre, le type de morceau et le compositeur => plus de titre au sens latex+
 - +permettre d'avoir plusieurs morceaux par page => plus de saut de ligne automatique.+
-- augmenter l'espacement entre les morceaux
-- ne pas couper un morceau entre plusieurs pages
+- +augmenter l'espacement entre les morceaux+
+- +ne pas couper un morceau entre plusieurs pages+
 - +augmenter la longueur des portées+
 
 *** Goodies
@@ -41,3 +41,7 @@ Pour définir la longueur de la portée:
 
 Remarque: dans mon cas, l'option line-width de lilypond-book ne
 fonctionne pas (avec et sans ragged-margin)
+
+Pour avoir un espacement vertical minimal raisonnable entre deux
+morceaux: commencer un nouveau paragraphe à chaque morceau avec
+\paragraph{}.

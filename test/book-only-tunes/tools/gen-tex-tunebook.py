@@ -130,7 +130,8 @@ def gen_tune_header(title, type=None):
     #if type != None:
     #    header.insert (2, " (" + type + ")")
     #return "".join(header)
-    return ""
+    header = "\\paragraph{}\n\\begin{figure}[p]\n"
+    return header
 
 
 def gen_tune_label(label):
@@ -152,7 +153,8 @@ def gen_lilypond_block(label):
     #block.append('}\n')
     block.append('\\include "' + '../' + out + '/' + label + '.ly' + '"' + "\n")
     block.append('\\end{lilypond}\n')
-    block.append('\\linebreak\n')
+    block.append('\\end{figure}\n')
+    #block.append('\\linebreak\n')
     return "".join(block)
 
 
@@ -189,8 +191,8 @@ def eat_up_template(template, tag=None):
 
 def gen_book_index(tunes):
     data = []
-
-    data.append('\n\n\\pagebreak\n')
+    data.append('\n\n')
+    #data.append('\\pagebreak\n')
     data.append('\\section*{Index des suites}\n')
 
     try:

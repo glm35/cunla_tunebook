@@ -20,7 +20,7 @@ lyfiles2 := $(patsubst ${src}/%.ly,${stage1_outdir}/%.ly,$(wildcard ${src}/*.ly)
 texfiles := $(wildcard ${src}/*.tex)
 
 ${stage2_outdir}/$(target).dvi : ${stage1_outdir} ${stage2_outdir} ${stage2_outdir}/${target}.tex ${stage2_outdir}/lilypond-book.log
-	@echo [LATEX] ${target}.tex
+	@echo [LATEX] ${target}.lytex
 	@cd ${stage2_outdir} && latex -halt-on-error -interaction=batchmode ${target}.tex > latex1.log
 	@cd ${stage2_outdir} && latex -interaction=batchmode ${target}.tex > latex2.log
 # Note: we call LaTeX twice to get the cross refs right (index)
@@ -29,9 +29,9 @@ ${stage2_outdir}/$(target).dvi : ${stage1_outdir} ${stage2_outdir} ${stage2_outd
 # ${stage2_outdir}/${target}.tex. Looking at the log file shows that
 # lilypond-book was run and that latex is (probably) to be run again.
 
-${stage2_outdir}/${target}.tex : ${stage1_outdir}/${target}.tex ${lyfiles} ${lyfiles2}
-	@echo [LILYPOND-BOOK `${LILYPOND_BOOK} --version`] ${stage1_outdir}/${target}.tex
-	cd ${stage2_outdir} && ${LILYPOND_BOOK} ../${stage1_outdir}/${target}.tex &> lilypond-book.log
+${stage2_outdir}/${target}.tex : ${stage1_outdir}/${target}.lytex ${lyfiles} ${lyfiles2}
+	@echo [LILYPOND-BOOK `${LILYPOND_BOOK} --version`] -o ${stage2_outdir}/${target}.tex ${stage1_outdir}/${target}.lytex
+	cd ${stage2_outdir} && ${LILYPOND_BOOK} ../${stage1_outdir}/${target}.lytex &> lilypond-book.log
 
 ${stage1_outdir}/%.ly : ${src}/%.ly
 #	@echo [CONVERT-LY] $<
@@ -51,7 +51,7 @@ ${stage1_outdir}/%.ly : ${src}/%.abc
 # the return code
 # - we don't care about grep return code
 
-${stage1_outdir}/${target}.tex: ${lyfiles} ${lyfiles2} ${texfiles} ./metadata/${target}.tex ./metadata/guitar_chords.tex ./metadata/${target}-sets.txt ./tools/gen-tex-tunebook.py ./metadata/${target}-tunes.txt
+${stage1_outdir}/${target}.lytex: ${lyfiles} ${lyfiles2} ${texfiles} ./metadata/${target}-template.lytex ./metadata/guitar_chords.tex ./metadata/${target}-sets.txt ./tools/gen-tex-tunebook.py ./metadata/${target}-tunes.txt
 	@echo [GEN-TEX-TUNEBOOK]
 	@tools/gen-tex-tunebook.py --name ${target}
 
@@ -84,6 +84,10 @@ view: ${stage2_outdir}/$(target).dvi
 viewps: ${stage2_outdir}/$(target).ps
 	@echo [EVINCE] ${stage2_outdir}/$(target).ps
 	@evince ${stage2_outdir}/$(target).ps &
+
+viewpdf: ${stage2_outdir}/$(target).pdf
+	@echo [EVINCE] ${stage2_outdir}/$(target).pdf
+	@evince ${stage2_outdir}/$(target).pdf &
 
 # Chord table
 table: ${stage2_outdir}/chord_table.dvi

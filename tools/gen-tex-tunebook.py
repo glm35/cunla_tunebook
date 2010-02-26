@@ -6,17 +6,11 @@ from optparse import OptionParser
 
 
 # ------------------------------------------------------------------------
-# Configuration variables
+# Global variables
 # ------------------------------------------------------------------------
 
 tune_dir = "tunes"
 out = "out.stage1"
-
-# Global variables overriden in parse_command_line()
-#label_file = "metadata/tunes.txt"
-#set_file = "metadata/sets.txt"
-#template_file = "metadata/tunebook.tex"
-#tunebook_file = out + "/tunebook.tex"
 
 
 # ------------------------------------------------------------------------
@@ -131,10 +125,14 @@ def get_metadata(tune, ext):
 # ------------------------------------------------------------------------
 
 def gen_tune_header(title, type=None):
-    header = ["\n\n\\pagebreak\n", "\\section{" + title, "}\n"]
-    if type != None:
-        header.insert (2, " (" + type + ")")
-    return "".join(header)
+    #header = ["\n\n\\pagebreak\n", "\\section{" + title, "}\n"]
+    #header = ["\n\n", "\\section{" + title, "}\n"]
+    #if type != None:
+    #    header.insert (2, " (" + type + ")")
+    #return "".join(header)
+    #header = "\\paragraph{}\n\\begin{figure}[p]\n"
+    header = "\\begin{figure}[!]\n"
+    return header
 
 
 def gen_tune_label(label):
@@ -145,17 +143,21 @@ def gen_tune_label(label):
 def gen_lilypond_block(label):
     block = []
     block.append('\\begin{lilypond}\n')
-    block.append('\\paper {\n')
-    block.append('  bookTitleMarkup = \\markup {\n')
-    block.append('    \\fill-line {\n')
-    # append an empty string to have the composer right aligned:
-    block.append('      ""\n')
-    block.append('      \\fromproperty #\'header:composer\n')
-    block.append('    }\n')
-    block.append('  }\n')
-    block.append('}\n')
+    #block.append('\\paper {\n')
+    #block.append('  bookTitleMarkup = \\markup {\n')
+    #block.append('    \\fill-line {\n')
+    ## append an empty string to have the composer right aligned:
+    #block.append('      ""\n')
+    #block.append('      \\fromproperty #\'header:composer\n')
+    #block.append('    }\n')
+    #block.append('  }\n')
+    #block.append('}\n')
     block.append('\\include "' + '../' + out + '/' + label + '.ly' + '"' + "\n")
     block.append('\\end{lilypond}\n')
+    block.append('\\end{figure}\n')
+    #block.append('\\linebreak\n')
+    #block.append('\\clearpage\n')
+
     return "".join(block)
 
 
@@ -163,16 +165,17 @@ def gen_tune(label, title, type):
     data = []
     data.append(gen_tune_header(title, type))
     data.append(gen_tune_label(label))
-    try:
-        f = open(tune_dir + "/" + label + ".tex")
-        for line in f:
-            if line.strip() == '\\tune':
-                data.append(gen_lilypond_block(label))
-                continue
-            data.append(line)
-        f.close()
-    except IOError:
-        data.append(gen_lilypond_block(label))
+#    try:
+#        f = open(tune_dir + "/" + label + ".tex")
+#        for line in f:
+#            if line.strip() == '\\tune':
+#                data.append(gen_lilypond_block(label))
+#                continue
+#            data.append(line)
+#        f.close()
+#    except IOError:
+#        data.append(gen_lilypond_block(label))
+    data.append(gen_lilypond_block(label))
     return data
 
 
@@ -192,8 +195,8 @@ def eat_up_template(template, tag=None):
 
 def gen_book_index(tunes):
     data = []
-
-    data.append('\n\n\\pagebreak\n')
+    data.append('\n\n')
+    #data.append('\\pagebreak\n')
     data.append('\\section*{Index des suites}\n')
 
     try:
@@ -262,7 +265,7 @@ def gen_book():
 
 label_file = "metadata/" + options.name + "-tunes.txt"
 set_file = "metadata/" + options.name + "-sets.txt"
-template_file = "metadata/" + options.name + ".tex"
-tunebook_file = out + "/" + options.name + ".tex"
+template_file = "metadata/" + options.name + "-template.lytex"
+tunebook_file = out + "/" + options.name + ".lytex"
 
 gen_book()

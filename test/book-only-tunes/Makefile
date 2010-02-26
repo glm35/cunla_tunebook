@@ -85,6 +85,10 @@ viewps: ${stage2_outdir}/$(target).ps
 	@echo [EVINCE] ${stage2_outdir}/$(target).ps
 	@evince ${stage2_outdir}/$(target).ps &
 
+viewpdf: ${stage2_outdir}/$(target).pdf
+	@echo [EVINCE] ${stage2_outdir}/$(target).pdf
+	@evince ${stage2_outdir}/$(target).pdf &
+
 # Chord table
 table: ${stage2_outdir}/chord_table.dvi
 

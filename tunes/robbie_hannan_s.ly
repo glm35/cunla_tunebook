@@ -2,7 +2,7 @@
 
 \header {
     title = "Robbie Hannan's"
-    subtitle = "Jig"
+    meter = "Jig"
 }
 %source="François Champs (Fev/2005)"
 

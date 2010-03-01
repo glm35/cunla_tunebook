@@ -131,7 +131,7 @@ def gen_tune_header(title, type=None):
     #    header.insert (2, " (" + type + ")")
     #return "".join(header)
     #header = "\\paragraph{}\n\\begin{figure}[p]\n"
-    header = "\\begin{figure}[!]\n"
+    header = "\\begin{figure}[H]\n"
     return header
 
 

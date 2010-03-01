@@ -2,7 +2,7 @@
 
 \header {
     title = "Pritouritze"
-    subtitle = "Reel"
+    meter = "Reel"
     composer = "François Champs"
 }
 %source = François Champs (Mar/2005)

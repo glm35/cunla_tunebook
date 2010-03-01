@@ -2,7 +2,7 @@
 
 \header {
     title = "Sheila Coyle's"
-    subtitle = "Reel"
+    meter = "Reel"
 }
 %source = "Florian (2005-03)"
 %composer = Trad.

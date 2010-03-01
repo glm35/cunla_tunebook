@@ -2,8 +2,8 @@
 
 \header{
 	title = "Farewell to Whalley range"
-	subtitle = "Slip Jig"
-  composer = "Michael McGoldrick"
+	meter = "Slip jig"
+	composer = "Michael McGoldrick"
 }
 %source = "François Champs (Fev/2005)"
 

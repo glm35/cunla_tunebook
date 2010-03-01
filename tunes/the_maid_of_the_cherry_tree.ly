@@ -2,8 +2,8 @@
 
 \header{
 	title = "The maid of the cherry tree"
-	subtitle = "Reel"
-	composer = ""
+	meter = "Reel"
+%	composer = ""
 }
 %source = "François Champs (Fev/2005)"
 

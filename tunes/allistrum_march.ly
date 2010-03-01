@@ -2,7 +2,7 @@
 
 \header {
     title = "Allistrum march"
-    subtitle = "Jig"
+    meter = "Jig"
 }
 %source = "François Champs (Fev/2005)"
 %discography = "Niall & Cillian Vallely: Callan Bridge"

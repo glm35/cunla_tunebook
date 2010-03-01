@@ -2,7 +2,7 @@
 
 \header {
     title = "San Miguel's"
-    subtitle = "Reel"
+    meter = "Reel"
     composer = "François Champs"
 }
 %source = "François Champs (Mar/2005)"

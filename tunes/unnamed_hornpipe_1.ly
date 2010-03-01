@@ -2,7 +2,7 @@
 
 \header {
     title="Unnamed Hornipe 1"
-    subtitle="Hornpipe"
+    meter="Hornpipe"
 }
 %source="François Champs (Fev/2005)"
 

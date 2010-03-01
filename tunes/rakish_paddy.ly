@@ -2,7 +2,7 @@
 
 \header {
     title = "Rakish Paddy"
-    subtitle = "Reel"
+    meter = "Reel"
 }
 %source = "Cyrille Gaillard (Mar/2005)"
 

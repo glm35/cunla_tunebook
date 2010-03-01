@@ -2,7 +2,7 @@
 
 \header{
 	title = "The crying game"
-	subtitle = "Slip Jig"
+	meter = "Slip jig"
 	composer = "Carole Ménard"
 }
 %source = "Carole Ménard (Fev/2005)"

@@ -2,7 +2,7 @@
 
 \header {
     title = "Unnamed Jig 5"
-    subtitle = "Jig"
+    meter = "Jig"
 }
 %source = "François Champs (Fev/2005)"
 %discography = "Avant avant dernier album de Danu (2005-09), dans le morceau uncle rat"

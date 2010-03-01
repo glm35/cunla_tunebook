@@ -12,11 +12,21 @@ d'apprentissage. Respecter l'ordre des suites.
 - +ne pas couper un morceau entre plusieurs pages+
 - +augmenter la longueur des portées+
 
+*** Formattage
+- titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid
+  harper's)
+- formattage des titres: majsucules partout? partout sauf sur les
+  articles? Partout => lourd. => sur les noms propres uniquement
+  (sentence case). Mais des fois c'est joli en title case...
+
+http://en.wikipedia.org/wiki/Title_case#Headings_and_publication_titles
+
 *** Goodies
 - index alphabétique des airs (en ne tenant pas compte du déterminant:
   "the", "a", ...
 - index alphabétique des airs par type (reel, jig, ..., autre)
-- discographie
+- discographie: auteur (alphabétique) => album (par année) => liste des
+  airs + type et numéro de page
 - statistiques (nombre d'airs, nombres d'airs par type, nombre d'airs
   par compositeur, ...)
 - liste des airs qui ne sont pas dans une suite
@@ -27,12 +37,16 @@ d'apprentissage. Respecter l'ordre des suites.
 
 *** Tunes
 - ajouter les airs manquants
-- vérifier que chaque air a un type (reel, jig, ...)
-- vérifier que chaque air a un compositeur (trad sinon)
+- +vérifier que chaque air a un type (reel, jig, ...)+
 
-* Documentation
-** line-width & co
-http://www.mail-archive.com/lilypond-user@gnu.org/msg52466.html
+* Style
+Un type de morceau (Reel, Jig) commence par une majuscule (champ
+informatif R: en abc, champ meter en lilypond)
+
+Format de la discographie: Auteur, "Titre de l'album", Année
+
+Quand le compositeur n'est pas connu, il vaut "Trad." à condition que ce
+status soit à peu près avéré.
 
 * Notes sur LaTeX et lilypond-book
 Pour définir la longueur de la portée: 

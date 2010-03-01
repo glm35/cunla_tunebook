@@ -2,7 +2,7 @@
 
 \header{
 	title = "Con Cassidy's"
-	subtitle = "Highland"
+	meter = "Highland"
 }
 %source = "François Champs (Fev/2005)"
 

@@ -2,7 +2,7 @@
 
 \header {
     title = "Bantry Bay"
-    subtitle = "Hornpipe"
+    meter = "Hornpipe"
 }
 %source="François Champs (Fev/2005)"
 

@@ -3,8 +3,8 @@
 \header {
 	crossRefNumber = "1"
 	footnotes = ""
-  title = "Paddy Fahy's"
-	subtitle = "Reel"
+	title = "Paddy Fahy's"
+	meter = "Reel"
 }
 %source = "François Champs (Fev/2005)"
 %discography = "Kevin Crawford: In good company"
@@ -38,7 +38,8 @@ melody =  {
     \alternative{
         { fis''8    g''8    a''8    fis''8 g''4    g''8    a''8 | }
         { fis''8    g''8    a''8    fis''8 g''8    e''8    d''8    c''8 |
-          b'8 g'8 g'2 \fermata}
+%          b'8 g'8 g'2 \fermata
+	}
     }
 }
 

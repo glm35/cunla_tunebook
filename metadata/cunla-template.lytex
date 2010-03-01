@@ -6,11 +6,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
-% section de test
-%\usepackage{graphics}
 % The geometry package provides a simple way to customize the page layout of your document.
 \usepackage[hmargin=2cm]{geometry}
-% fin de section de test
+
+\usepackage{float}
 
 \usepackage{syntonly}
 %\syntaxonly % A commenter pour générer réellement le document

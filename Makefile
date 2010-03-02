@@ -51,9 +51,9 @@ ${stage1_outdir}/%.ly : ${src}/%.abc
 # the return code
 # - we don't care about grep return code
 
-${stage1_outdir}/${target}.lytex: ${lyfiles} ${lyfiles2} ${texfiles} ./metadata/${target}-template.lytex ./metadata/guitar_chords.tex ./metadata/${target}-sets.txt ./tools/gen-tex-tunebook.py ./metadata/${target}-tunes.txt
+${stage1_outdir}/${target}.lytex: ${lyfiles} ${lyfiles2} ${texfiles} ./metadata/${target}-template.lytex ./metadata/guitar_chords.tex ./metadata/${target}-sets.txt ./tools/gen_tex_tunebook.py ./metadata/${target}-tunes.txt
 	@echo [GEN-TEX-TUNEBOOK]
-	@tools/gen-tex-tunebook.py --name ${target}
+	@tools/gen_tex_tunebook.py --name ${target}
 
 ${stage1_outdir} :
 	@echo [MKDIR] ${stage1_outdir}

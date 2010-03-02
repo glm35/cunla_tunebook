@@ -1,0 +1,97 @@
+
+%\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{book}
+
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% The geometry package provides a simple way to customize the page layout of your document.
+\usepackage[hmargin=2cm]{geometry}
+
+\usepackage{float}
+
+\usepackage{syntonly}
+%\syntaxonly % A commenter pour générer réellement le document
+
+\usepackage{gchords}
+
+
+%\author{Gwenaël \bsc{Lambrouin}}
+\title{Cunla's Music of Ireland, Scotland and Ailleursland, 2005-2009}
+%\date{04 janvier 2003}
+% Avec le makefile, le TuneBook n'est regénéré que quand il y a une
+% modification. Donc on peut bien utiliser la commande \today
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+% Quelques accords communs
+%\input{../metadata/guitar_chords}
+
+%\section{Introduction}
+
+
+%Une compilation des airs de musique irlandaise que j'ai appris à la
+%flûte, et (ou) les airs pour lesquels j'ai cherché un accompagnement à la
+%guitare.
+%
+%L'intérêt est de pouvoir réviser régulièrement les morceaux, et de retrouver
+%rapidement un air ``oublié''.
+
+
+\begin{figure}[H]
+\label{the_roaring_barmaid}
+\begin{lilypond}
+\include "../out.stage1/the_roaring_barmaid.ly"
+\end{lilypond}
+\end{figure}
+\begin{figure}[H]
+\label{the_humours_of_whiskey}
+\begin{lilypond}
+\include "../out.stage1/the_humours_of_whiskey.ly"
+\end{lilypond}
+\end{figure}
+\begin{figure}[H]
+\label{come_upstairs_with_me}
+\begin{lilypond}
+\include "../out.stage1/come_upstairs_with_me.ly"
+\end{lilypond}
+\end{figure}
+\begin{figure}[H]
+\label{toss_the_feathers}
+\begin{lilypond}
+\include "../out.stage1/toss_the_feathers.ly"
+\end{lilypond}
+\end{figure}
+\begin{figure}[H]
+\label{the_wind_that_shakes_the_barley}
+\begin{lilypond}
+\include "../out.stage1/the_wind_that_shakes_the_barley.ly"
+\end{lilypond}
+\end{figure}
+\begin{figure}[H]
+\label{the_fermoye_lasses}
+\begin{lilypond}
+\include "../out.stage1/the_fermoye_lasses.ly"
+\end{lilypond}
+\end{figure}
+
+\clearpage
+
+\section*{Index des airs}
+\emph{Come Upstairs with Me}~(slip jig),~p.\pageref{come_upstairs_with_me}
+
+\emph{Fermoye Lasses, The}~(reel),~p.\pageref{the_fermoye_lasses}
+
+\emph{Humours of Whiskey, The}~(slip jig),~p.\pageref{the_humours_of_whiskey}
+
+\emph{Roaring Barmaid, The}~(jig),~p.\pageref{the_roaring_barmaid}
+
+\emph{Toss the Feathers}~(reel),~p.\pageref{toss_the_feathers}
+
+\emph{Wind that Shakes the Barley, The}~(reel),~p.\pageref{the_wind_that_shakes_the_barley}
+\end{document}

@@ -1,3 +1,8 @@
+* Feuille de route TDD
+Index des airs (toute catégorie confondue)
+	format: nom[, déterminant] (type) p.
+	classement alphabétique
+
 * Cunla tunes
 ** Objectif
 Recueil des airs joués avec Cunla. Mélodie uniquement (pas les accords,
@@ -30,6 +35,22 @@ http://en.wikipedia.org/wiki/Title_case#Headings_and_publication_titles
 - statistiques (nombre d'airs, nombres d'airs par type, nombre d'airs
   par compositeur, ...)
 - liste des airs qui ne sont pas dans une suite
+
+**** Index des airs (toute catégorie confondue)
+Format: nom[, déterminant] (type) page
+
+Exemple:
+
+	Yellow Wattle, The (Jig) p.37
+
+Autres considérations:
+- Le nom du morceau est en italique.
+- Classement alphabétique des tunes
+- Disposition en colonne?
+
+Données en entrée: le dictionnaire des tunes:
+- clé = label
+- champ = dictionnaire: clé = titre 'title' |type = 'type'
 
 *** Build system
 - +extension d'un doc lilypond-book: .lytex+

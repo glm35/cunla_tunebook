@@ -202,7 +202,7 @@ def gen_book_index(tunes):
     try:
         f = open(set_file)
     except:
-        sys.stderr.write("Warning: Cannot open" + set_file + "\n")
+        sys.stderr.write("Warning: Cannot open " + set_file + "\n")
         return []
 
     for lineno, line in enumerate(f):
@@ -260,12 +260,16 @@ def gen_book():
 # ------------------------------------------------------------------------
 # Program entry point
 # ------------------------------------------------------------------------
+#     (not executed when gen_tex_tunebook.py is imported: needed for
+#     unitary tests)
+# ------------------------------------------------------------------------
 
-(options, args) = parse_command_line()
+if __name__ == '__main__':
+    (options, args) = parse_command_line()
 
-label_file = "metadata/" + options.name + "-tunes.txt"
-set_file = "metadata/" + options.name + "-sets.txt"
-template_file = "metadata/" + options.name + "-template.lytex"
-tunebook_file = out + "/" + options.name + ".lytex"
+    label_file = "metadata/" + options.name + "-tunes.txt"
+    set_file = "metadata/" + options.name + "-sets.txt"
+    template_file = "metadata/" + options.name + "-template.lytex"
+    tunebook_file = out + "/" + options.name + ".lytex"
 
-gen_book()
+    gen_book()

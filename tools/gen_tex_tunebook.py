@@ -121,6 +121,52 @@ def get_metadata(tune, ext):
 
 
 # ------------------------------------------------------------------------
+# Manipulate the metadata of a tune
+# ------------------------------------------------------------------------
+
+class Tune():
+
+    def __init__(self, label="", title="", type=""):
+        self.label = label
+        self.title = title
+        self.type = type
+
+    def __cmp__(self, other):
+        x = self.title.lower()
+        y = other.title.lower()
+        if x > y:
+            return 1
+        elif x == y:
+            return 0
+        else:  #x < y
+            return -1
+
+    def __str__(self):
+        return self.title
+
+    def format_index_entry(self):
+        return "\emph{{{0}}}~({1}),~p.\pageref{{{2}}}".format(self.title, self.type, self.label)
+
+
+def sort_tunes(tunes):
+    sorted_tunes = tunes
+    sorted_tunes.sort()
+    return sorted_tunes
+
+def demote_determinant(title):
+    words = title.split()
+    if words == []:
+        return title
+    determinant = words[0]
+    if determinant.lower() in ["the"]:
+        index_title = " ".join(words[1:])
+        index_title += ", " + determinant
+        return index_title
+    else:
+        return title
+
+
+# ------------------------------------------------------------------------
 # Generate a tune
 # ------------------------------------------------------------------------
 

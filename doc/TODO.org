@@ -1,7 +1,9 @@
 * Feuille de route TDD
-Index des airs (toute catégorie confondue)
-	format: nom[, déterminant] (type) p.
-	classement alphabétique
++\emph{Come Upstairs with Me}~(slip jig),~p.\pageref{come_upstairs_with_me}+
++Classement alphabétique d'après le titre+
++Mise en retrait du déterminant ("The Yellow Tinker" => "Yellow Tinker, The")+
+Prise en compte dans le classement alphabétique
+Nouvelle section %%TUNE_INDEX dans le fichier template
 
 * Cunla tunes
 ** Objectif

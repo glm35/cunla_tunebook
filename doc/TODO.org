@@ -2,8 +2,12 @@
 +\emph{Come Upstairs with Me}~(slip jig),~p.\pageref{come_upstairs_with_me}+
 +Classement alphabétique d'après le titre+
 +Mise en retrait du déterminant ("The Yellow Tinker" => "Yellow Tinker, The")+
-Prise en compte dans le classement alphabétique
-Nouvelle section %%TUNE_INDEX dans le fichier template
++Prise en compte dans le classement alphabétique+
++gen_index_of_tunes+
+Nouveaux déterminants: "les", "le"
+Affichage en colonne
+format_index_entry(): prévoir le cas où le type de morceau n'est pas défini
+saut de page entre l'index des airs et l'index des suites
 
 * Cunla tunes
 ** Objectif

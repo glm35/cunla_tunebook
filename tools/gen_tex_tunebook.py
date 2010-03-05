@@ -150,6 +150,8 @@ class Tune():
 
 def sort_tunes(tunes):
     sorted_tunes = tunes
+    for tune in sorted_tunes:
+        tune.title = demote_determinant(tune.title)
     sorted_tunes.sort()
     return sorted_tunes
 
@@ -239,7 +241,15 @@ def eat_up_template(template, tag=None):
     return data
 
 
-def gen_book_index(tunes):
+def gen_index_of_tunes(tunes):
+    sorted_tunes = sort_tunes(tunes)
+    latex_index = "\\section*{Index des airs}\n"
+    for tune in tunes:
+        latex_index += tune.format_index_entry() + "\n\n"
+    return latex_index
+
+
+def gen_index_of_sets(tunes):
     data = []
     data.append('\n\n')
     #data.append('\\pagebreak\n')
@@ -291,14 +301,17 @@ def gen_book():
 
     f_tunebook = open(tunebook_file, "w")
     f_tunebook.writelines(eat_up_template(template, "%%INSERT_TUNES\n"))
+    obj_tunes = []
     for label in labels:
         title, type = get_tune_metadata(label)
         if not title:
             continue
         tunes[label] = {'title' : title, 'type' : type}
+        obj_tunes.append(Tune(label, title, type))
         f_tunebook.writelines(gen_tune(label, title, type))
     f_tunebook.writelines(eat_up_template(template, "%%INSERT_INDEX\n"))
-    f_tunebook.writelines(gen_book_index(tunes))
+    f_tunebook.write(gen_index_of_tunes(obj_tunes))
+    f_tunebook.writelines(gen_index_of_sets(tunes))
     f_tunebook.writelines(eat_up_template(template))
     f_tunebook.close()
 

@@ -73,9 +73,12 @@ ${stage2_outdir}/$(target).ps : ${stage2_outdir}/$(target).dvi
 
 pdf: ${stage2_outdir}/$(target).pdf
 
-${stage2_outdir}/$(target).pdf : ${stage2_outdir}/$(target).dvi
-	@echo [DVIPDF] ${target}.dvi -- NOTE: ps output is preferred
-	@cd ${stage2_outdir} && dvipdf ${target}.dvi
+${stage2_outdir}/$(target).pdf : ${stage2_outdir}/$(target).ps
+	@echo [PS2PDF] ${target}.ps
+	@cd ${stage2_outdir} && ps2pdf -sPAPERSIZE=a4 $(target).ps
+#	@cd ${stage2_outdir} && dvipdf ${target}.dvi
+# dvipdf: prb: sortie "US letter" au lieu de "A4".
+# dvips cunla.dvi && ps2pdf -sPAPERSIZE=a4 cunla.ps
 
 view: ${stage2_outdir}/$(target).dvi
 	@echo [XDVI] ${stage2_outdir}/$(target).dvi

@@ -1,7 +1,7 @@
 \version "2.11.23"
 
 \header{
-	title = "Farewell to Whalley range"
+	title = "Farewell to Whalley Range"
 	meter = "Slip jig"
 	composer = "Michael McGoldrick"
 }

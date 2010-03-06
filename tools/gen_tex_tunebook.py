@@ -99,7 +99,7 @@ def get_metadata(tune, ext):
         type_re = re.compile('^R:(.*)$')
     else:
         title_re = re.compile('^\s*title\s*=\s*"(.*)"$')
-        type_re = re.compile('^\s*subtitle\s*=\s*"(.*)"$')
+        type_re = re.compile('^\s*meter\s*=\s*"(.*)"$')
 
     for line in tune:
         if title and type:

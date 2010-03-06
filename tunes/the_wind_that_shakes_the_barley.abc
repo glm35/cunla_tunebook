@@ -1,11 +1,8 @@
 X:1
 T:The Wind that Shakes the Barley
-S:http://www.thesession.org/tunes/display/116
-M:4/4
-L:1/8
+M:2/2
 R:Reel
 K:Dmaj
-|A2AB AFED|B2BA BcdB|A2AB AFED|gfed BcdB|
-A2AB AFED|B2BA BcdB|A2AB AFED|gfed Bcde|
-|f2fd g2ge|f2fd Bcde|f2fd g2fg|afed Bcde|
-f2fd g2ge|f2fd Bcde|f2ae g2be|afed BcdB|
+|: A2AB AFED | B2BA BcdB | AAAB A2de |1 fded BcdB :|2 fded Bcde ||
+  f2fd g2ge | f2fd Bcde | f2fd g2fg | afed Bcde |
+  f2fd g2ge | f2fd BcdA | defg a2af | gfed BcdB |

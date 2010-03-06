@@ -1,7 +1,7 @@
 \version "2.11.23"
 
 \header {
-    title = "Allistrum march"
+    title = "Allistrum March"
     meter = "Jig"
 }
 %source = "François Champs (Fev/2005)"

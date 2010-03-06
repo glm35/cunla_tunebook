@@ -61,7 +61,7 @@ harmony =  {
         }
         \alternative {
             { c2 d | }
-            { c2 d | g }
+            { c2 d | } %g }
         }
     }
 }

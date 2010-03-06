@@ -1,7 +1,7 @@
 \version "2.11.23"
 
 \header{
-	title = "The maid of the cherry tree"
+	title = "The Maid of the Cherry Tree"
 	meter = "Reel"
 %	composer = ""
 }

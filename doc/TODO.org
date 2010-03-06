@@ -10,10 +10,6 @@ saut de page entre l'index des airs et l'index des suites
 Affichage en colonne
 Titre du songbook: 2005-2010
 
-Tunes:
-- titres en majuscules
-- définir le type de chaque morceau
-
 * Cunla tunes
 ** Objectif
 Recueil des airs joués avec Cunla. Mélodie uniquement (pas les accords,
@@ -31,11 +27,6 @@ d'apprentissage. Respecter l'ordre des suites.
 *** Formattage
 - titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid
   harper's)
-- formattage des titres: majsucules partout? partout sauf sur les
-  articles? Partout => lourd. => sur les noms propres uniquement
-  (sentence case). Mais des fois c'est joli en title case...
-
-http://en.wikipedia.org/wiki/Title_case#Headings_and_publication_titles
 
 *** Goodies
 - index alphabétique des airs (en ne tenant pas compte du déterminant:
@@ -79,6 +70,13 @@ Format de la discographie: Auteur, "Titre de l'album", Année
 
 Quand le compositeur n'est pas connu, il vaut "Trad." à condition que ce
 status soit à peu près avéré.
+
+Formattage des titres: "title case" avec des majuscules partout sauf sur
+majsucules partout sauf sur les articles et les formes du verbe être
+(majuscules partout = lourd; que sur les noms propres = un peu triste
+IMO)
+http://en.wikipedia.org/wiki/Title_case#Headings_and_publication_titles
+
 
 * Notes sur LaTeX et lilypond-book
 Pour définir la longueur de la portée: 

@@ -1,7 +1,7 @@
 \version "2.11.23"
 
 \header{
-	title = "The crying game"
+	title = "The Crying Game"
 	meter = "Slip jig"
 	composer = "Carole Ménard"
 }

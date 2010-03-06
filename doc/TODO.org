@@ -6,9 +6,12 @@
 +gen_index_of_tunes+
 +Nouveaux déterminants: "les", "le"_+
 +format_index_entry(): prévoir le cas où le type de morceau n'est pas défini (e.g. "the crying game")+
-saut de page entre l'index des airs et l'index des suites
-Affichage en colonne
-Titre du songbook: 2005-2010
++saut de page entre l'index des airs et l'index des suites+
++Affichage de l'index des airs en colonne+
++Titre du songbook: 2005-2010+
+
+- titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid
+  harper's)
 
 * Cunla tunes
 ** Objectif
@@ -29,8 +32,6 @@ d'apprentissage. Respecter l'ordre des suites.
   harper's)
 
 *** Goodies
-- index alphabétique des airs (en ne tenant pas compte du déterminant:
-  "the", "a", ...
 - index alphabétique des airs par type (reel, jig, ..., autre)
 - discographie: auteur (alphabétique) => album (par année) => liste des
   airs + type et numéro de page
@@ -77,6 +78,9 @@ majsucules partout sauf sur les articles et les formes du verbe être
 IMO)
 http://en.wikipedia.org/wiki/Title_case#Headings_and_publication_titles
 
+L'index des airs est affiché sur 2 colonnes
+(http://texblog.wordpress.com/2007/08/11/creating-two-columns-in-article-report-or-book/)
+en ne tenant pas compte du déterminant: "the", "a", ...
 
 * Notes sur LaTeX et lilypond-book
 Pour définir la longueur de la portée: 

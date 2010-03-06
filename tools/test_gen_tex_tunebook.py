@@ -37,6 +37,10 @@ class TestTuneIndex(unittest.TestCase):
     def test_demote_determinant(self):
         self.assertEqual("Yellow Tinker, The", demote_determinant("The Yellow Tinker"))
 
+    def test_demote_determinant_2(self):
+        self.assertEqual("Ridées de Lanvaudan, Les",
+                         demote_determinant("Les Ridées de Lanvaudan"))
+
     def test_dont_demote_determinant(self):
         self.assertEqual("Then I Go", demote_determinant("Then I Go"))
 

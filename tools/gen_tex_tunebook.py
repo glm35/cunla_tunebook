@@ -160,7 +160,7 @@ def demote_determinant(title):
     if words == []:
         return title
     determinant = words[0]
-    if determinant.lower() in ["the"]:
+    if determinant.lower() in ["the", "les", "le"]:
         index_title = " ".join(words[1:])
         index_title += ", " + determinant
         return index_title

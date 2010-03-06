@@ -145,8 +145,11 @@ class Tune():
         return self.title
 
     def format_index_entry(self):
-        return "\emph{{{0}}}~({1}),~p.\pageref{{{2}}}".format(self.title, self.type, self.label)
-
+        if self.type == None or self.type == "":
+            entry = "\emph{{{0}}},~p.\pageref{{{1}}}".format(self.title, self.label)
+        else:
+            entry = "\emph{{{0}}}~({1}),~p.\pageref{{{2}}}".format(self.title, self.type, self.label)
+        return entry
 
 def sort_tunes(tunes):
     sorted_tunes = tunes

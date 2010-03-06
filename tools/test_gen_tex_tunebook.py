@@ -23,6 +23,26 @@ class TestTuneIndex(unittest.TestCase):
 
         self.assertEqual(expected_result, tune.format_index_entry())
 
+    def test_format_tune_index_entry_empty_type(self):
+        tune = Tune()
+        tune.title = "Come Upstairs with Me"
+        tune.type = ""
+        tune.label = "come_upstairs_with_me"
+
+        expected_result = "\emph{Come Upstairs with Me},~p.\pageref{come_upstairs_with_me}"
+
+        self.assertEqual(expected_result, tune.format_index_entry())
+
+    def test_format_tune_index_entry_no_type(self):
+        tune = Tune()
+        tune.title = "Come Upstairs with Me"
+        tune.type = None
+        tune.label = "come_upstairs_with_me"
+
+        expected_result = "\emph{Come Upstairs with Me},~p.\pageref{come_upstairs_with_me}"
+
+        self.assertEqual(expected_result, tune.format_index_entry())
+
     def test_sort_by_name(self):
         tunes = [Tune("yellow_tinker", "Yellow Tinker", "reel"),
                  Tune("come_upstairs_with_me", "Come Upstairs with Me", "slip jig"),

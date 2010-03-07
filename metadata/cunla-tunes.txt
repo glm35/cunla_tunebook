@@ -58,6 +58,7 @@ cailleach_reel
 bill_harte_s
 
 les_ridees_de_lanvaudan
+reel_d_session
 the_rolling_waves_of_frehel
 
 the_roaring_barmaid
@@ -74,7 +75,6 @@ paddy_taylor
 rakish_paddy
 air_cretois
 air_moving
-reel_d_session
 reel_em_francois
 reel_amix
 the_tinkerman_s_wife

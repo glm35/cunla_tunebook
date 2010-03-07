@@ -13,6 +13,11 @@
 - titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid
   harper's)
 - sortie "cunla-tunebook.pdf" (au lieu de cunla.pdf)
+- index des suites: si les 3 airs ont le même type, écrire le type en
+  premier (pas italique) puis les 3 airs sans le type. Par exemple:
+  "Jigs: Father O'Flynn (p.12), Brid Harper's (p.12)"
+- sections: pouvoir définir des sections "latex" dans
+  "cunla-tunes.txt". Exemple: "Airs sans suite".
 
 * Cunla tunes
 ** Objectif

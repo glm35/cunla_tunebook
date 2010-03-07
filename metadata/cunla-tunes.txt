@@ -61,6 +61,8 @@ les_ridees_de_lanvaudan
 reel_d_session
 the_rolling_waves_of_frehel
 
+the_thermometer
+reel_amix
 the_roaring_barmaid
 
 the_humours_of_whiskey
@@ -75,8 +77,6 @@ paddy_taylor
 rakish_paddy
 air_cretois
 air_moving
-reel_em_francois
-reel_amix
 the_tinkerman_s_wife
 the_mistress_on_the_floor
 dublin_reel

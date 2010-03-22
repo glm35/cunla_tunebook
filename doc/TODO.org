@@ -9,15 +9,15 @@
 +saut de page entre l'index des airs et l'index des suites+
 +Affichage de l'index des airs en colonne+
 +Titre du songbook: 2005-2010+
++sortie "cunla-tunebook.pdf" (au lieu de cunla.pdf)+
 
-- titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid
-  harper's)
-- sortie "cunla-tunebook.pdf" (au lieu de cunla.pdf)
 - index des suites: si les 3 airs ont le même type, écrire le type en
   premier (pas italique) puis les 3 airs sans le type. Par exemple:
   "Jigs: Father O'Flynn (p.12), Brid Harper's (p.12)"
+
 - index des suites: pouvoir donner un nom à une suite. e.g.
   "The Oran Set"
+
 - sections: pouvoir définir des sections "latex" dans
   "cunla-tunes.txt". Exemple: "Airs sans suite".
 
@@ -36,8 +36,7 @@ d'apprentissage. Respecter l'ordre des suites.
 - +augmenter la longueur des portées+
 
 *** Formattage
-- titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid
-  harper's)
+- +titre avec des accents sur le i: voir si ça existe en UTF-8 (ex. brid harper's)+
 
 *** Goodies
 - index alphabétique des airs par type (reel, jig, ..., autre)
@@ -71,7 +70,6 @@ Données en entrée: le dictionnaire des tunes:
 - ajouter les airs manquants
 - +vérifier que chaque air a un type (reel, jig, ...)+
 - trouver les noms manquants:
-  reel_d_session
   the_rolling_waves_of_frehel
   reel_amixo
   unnamed_hornpipe_1

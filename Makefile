@@ -9,7 +9,7 @@ ABC2LY=abc4ly.py
 
 # 2 cibles configurables: "cunla" (uniquement le répertoire cunla) et
 # "tunebook" (tout mon répertoire irlandais)
-target = cunla
+target = cunla-tunebook
 stage1_outdir = out.stage1
 stage2_outdir = out.stage2
 #src = src

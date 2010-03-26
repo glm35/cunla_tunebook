@@ -113,6 +113,68 @@ class TestTuneIndex(unittest.TestCase):
         self.assertEqual(expected_latex_index, latex_index)
 
 
+class TestSetIndex(unittest.TestCase):
+
+    def test_set_index_entry(self):
+        tunes = [Tune("our_kate", "Our Kate", "slow air"),
+                 Tune("unnamed_jig_2", "Unnamed Jig 2", "jig"),
+                 Tune("paddy_fahy_s", "Paddy Fahy's", "reel")]
+        expected_index_entry = r"""\emph{Our Kate}~(slow air),~p.\pageref{our_kate}~/ \emph{Unnamed Jig 2}~(jig),~p.\pageref{unnamed_jig_2}~/ \emph{Paddy Fahy's}~(reel),~p.\pageref{paddy_fahy_s}"""
+
+        index_entry = format_set_index_entry(tunes)
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_entry_no_type(self):
+        # One entry without type
+        tunes = [Tune("our_kate", "Our Kate", "slow air"),
+                 Tune("mysterious_tune", "The Mysterious Tune")]
+        expected_index_entry = r"""\emph{Our Kate}~(slow air),~p.\pageref{our_kate}~/ \emph{The Mysterious Tune},~p.\pageref{mysterious_tune}"""
+
+        index_entry = format_set_index_entry(tunes)
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_entry_no_type2(self):
+        # One entry without type
+        tunes = [Tune("our_kate", "Our Kate", "slow air"),
+                 Tune("mysterious_tune", "The Mysterious Tune", None)]
+        expected_index_entry = r"""\emph{Our Kate}~(slow air),~p.\pageref{our_kate}~/ \emph{The Mysterious Tune},~p.\pageref{mysterious_tune}"""
+
+        index_entry = format_set_index_entry(tunes)
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_entry_factorize_type(self):
+        # All the entries have the same type
+        tunes = [Tune("the_mountain_road", "The Mountain Road", "reel"),
+                 Tune("the_twelve_pins", "The Twelve Pins", "reel")]
+        expected_index_entry = r"""Reels: \emph{The Mountain Road},~p.\pageref{the_mountain_road}~/ \emph{The Twelve Pins},~p.\pageref{the_twelve_pins}"""
+
+        index_entry = format_set_index_entry(tunes)
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_entry_no_type_at_all(self):
+        # Factorization does not apply here
+        tunes = [Tune("our_kate", "Our Kate", None),
+                 Tune("mysterious_tune", "The Mysterious Tune", None)]
+        expected_index_entry = r"""\emph{Our Kate},~p.\pageref{our_kate}~/ \emph{The Mysterious Tune},~p.\pageref{mysterious_tune}"""
+
+        index_entry = format_set_index_entry(tunes)
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_entry_only_one_tune(self):
+        # One entry without type
+        tunes = [Tune("our_kate", "Our Kate", "slow air")]
+        expected_index_entry = r"""\emph{Our Kate}~(slow air),~p.\pageref{our_kate}"""
+
+        index_entry = format_set_index_entry(tunes)
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+
 if __name__ == '__main__':
     unittest.main()
 

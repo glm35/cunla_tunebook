@@ -231,6 +231,45 @@ def gen_tune(label, title, type):
 
 
 # ------------------------------------------------------------------------
+# Make the index of sets
+# ------------------------------------------------------------------------
+
+def format_set_index_entry(tunes):
+    entry = ""
+
+    # Do all the tunes have the same type?
+    same_type = True
+    set_type = ""
+    for tune in tunes:
+        if tune.type == None:
+            tune.type = ""
+        if set_type == "":
+            set_type = tune.type
+        else:
+            if set_type != tune.type:
+                same_type = False
+                break
+
+    factorize_type = False
+    if len(tunes) >= 2:
+        if same_type and set_type != "":
+            entry = set_type.capitalize() + "s: "
+            factorize_type = True
+
+    first_tune = True
+    for tune in tunes:
+        tune_ref = '\emph{' + tune.title + '}'
+        if tune.type != "" and tune.type != None and not factorize_type:
+            tune_ref += '~(' + tune.type + ')'
+        tune_ref += ',~p.\pageref{' + tune.label + '}'
+        if not first_tune:
+            entry += '~/ '
+        first_tune = False
+        entry += tune_ref
+    return entry
+
+
+# ------------------------------------------------------------------------
 # Generate the book
 # ------------------------------------------------------------------------
 
@@ -275,6 +314,7 @@ def gen_index_of_sets(tunes):
             continue
         labels = line.split(',')
         entry = []
+        tune_set = []
         for label in labels:
             label = label.strip()
             if not tunes.has_key(label):
@@ -282,14 +322,9 @@ def gen_index_of_sets(tunes):
                                  "Warning: No matching tune for index label " +
                                  label + "\n")
                 continue
-            tune = []
-            tune.append('\emph{' + tunes[label]['title'] + '}')
-            if tunes[label]['type'] != None:
-                tune.append('~(' + tunes[label]['type'] + ')')
-            tune.append(',~p.\\pageref{' + label + '}')
-            entry.append("".join(tune))
-        data.append('~/ '.join(entry) + "\n")
-        data.append('\n')
+            tune_set.append(Tune(label, tunes[label]['title'], tunes[label]['type']))
+        index_entry = format_set_index_entry(tune_set)
+        data.append(index_entry + "\n\n")
 
     f.close()
     return data

@@ -78,8 +78,6 @@ Données en entrée: le dictionnaire des tunes:
 - trouver les noms manquants:
   the_rolling_waves_of_frehel
   reel_amixo
-  unnamed_hornpipe_1
-  unnamed_jig_2
 
 * Style
 Un type de morceau (Reel, Jig) commence par une majuscule (champ

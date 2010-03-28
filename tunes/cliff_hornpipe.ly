@@ -1,10 +1,14 @@
 \version "2.11.23"
 
 \header {
-    title="Unnamed Hornipe 1"
+    title="The Cliff"
     meter="Hornpipe"
 }
 %source="François Champs (Fev/2005)"
+
+%disco: Mick O'Brien: "May Morning Dew". Sous le nom "Higgin's". Plein
+%de noms, plein d'enregistrements pour ce morceau, et même plein
+%d'identifiants sur thesession.org.
 
 melody =  {
     \time 2/2

@@ -11,7 +11,7 @@ road_to_thales, the_green_gates, the_boys_of_malin
 humours_of_ballylaughlin, four_courts
 the_flight_of_the_butterfly, the_goat_island_reel
 farewell_to_whalley_range, johnny_loves_molly
-our_kate, unnamed_jig_2, paddy_fahy_s
+our_kate, piper_s_chair, paddy_fahy_s
 the_mountain_road, the_twelve_pins
 the_humours_of_kilclogher, the_kings_of_inishbofin, garrevaques
 the_recruiting_sergeant, cailleach_reel, bill_harte_s
@@ -19,3 +19,4 @@ les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel
 the_thermometer, reel_amix, the_roaring_barmaid
 the_humours_of_whiskey, breeze_in_batz, come_upstairs_with_me
 toss_the_feathers, the_wind_that_shakes_the_barley, the_fermoye_lasses
+connie_in_the_pool, ballyvourney_polka

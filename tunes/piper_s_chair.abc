@@ -1,11 +1,11 @@
 X:1
-T:Unnamed Jig 2
+T:The Piper's Chair
 R:Jig
-S:Valérie Yvon (la flûtiste)
-C:Une joueuse de concertina irlandaise (Ellen ???)
+S:Valérie Yvon (la flûtiste), qui a entendu cet air joué par une joueuse
+S:de concertina irlandaise (Ellen ???)
+I:http://www.thesession.org/tunes/display/1255
 M:6/8
-L:1/8
-K:G
+K:Gmaj
 |: "Gsus" DGG GFD | "Gsus/C" c2c ABc | "Dsus" d2d cAG | A2A "Dsus/F" =FEF |
    "Gsus(2)" DGG GFD | "Gsus/C" c2c ABc | "Dsus" d2d cA "Dsus(2)" F | AG "D" F "Gsus" G3 :|
 |: "Gsus" dgg agf | "D" d2g gfg | "Gsus(2)"GBd "/F"=fef | "Csus/B"A2B cBA |

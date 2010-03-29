@@ -19,10 +19,13 @@
 
   - +exception: si il n'y a qu'un air dans la suite+
 
-  - pouvoir donner un nom à une suite. e.g. "The Oran Set"
+  - +pouvoir donner un nom à une suite. e.g. "The Oran Set"_+
 
-  - si tous les airs de la suite ont le même type, notation: "The Oran
-    Set (reels): tune A, tune B". Nom du set en italique.
+  - +si tous les airs de la suite ont le même type, notation: "The Oran+
+    +Set (reels): tune A, tune B". Nom du set en italique.+
+
+  - numéro de page entres parenthèses, avec le type d'air si celui-ci
+    est présent.
 
 - sections: pouvoir définir des sections "latex" dans
   "cunla-tunes.txt". Exemple: "Airs sans suite".

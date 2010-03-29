@@ -113,7 +113,7 @@ class TestTuneIndex(unittest.TestCase):
         self.assertEqual(expected_latex_index, latex_index)
 
 
-class TestSetIndex(unittest.TestCase):
+class TestFormatSetIndexEntry(unittest.TestCase):
 
     def test_set_index_entry(self):
         tunes = [Tune("our_kate", "Our Kate", "slow air"),
@@ -173,6 +173,60 @@ class TestSetIndex(unittest.TestCase):
         index_entry = format_set_index_entry(tunes)
 
         self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_with_title(self):
+        tunes = [Tune("our_kate", "Our Kate", "slow air"),
+                 Tune("unnamed_jig_2", "Unnamed Jig 2", "jig"),
+                 Tune("paddy_fahy_s", "Paddy Fahy's", "reel")]
+        expected_index_entry = r"""\emph{The Old Set}: \emph{Our Kate}~(slow air),~p.\pageref{our_kate}~/ \emph{Unnamed Jig 2}~(jig),~p.\pageref{unnamed_jig_2}~/ \emph{Paddy Fahy's}~(reel),~p.\pageref{paddy_fahy_s}"""
+
+        index_entry = format_set_index_entry(tunes, "The Old Set")
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+    def test_set_index_entry_factorize_type_with_title(self):
+        # All the entries have the same type
+        tunes = [Tune("the_mountain_road", "The Mountain Road", "reel"),
+                 Tune("the_twelve_pins", "The Twelve Pins", "reel")]
+        expected_index_entry = r"""\emph{The Snowy Set} (reels): \emph{The Mountain Road},~p.\pageref{the_mountain_road}~/ \emph{The Twelve Pins},~p.\pageref{the_twelve_pins}"""
+
+        index_entry = format_set_index_entry(tunes, "The Snowy Set")
+
+        self.assertEqual(expected_index_entry, index_entry)
+
+
+
+class TestParseSet(unittest.TestCase):
+
+    def test_split_title_and_tunes(self):
+        index_entry = "The Oran Set: les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel"
+        (index_title, index_tunes) = split_title_and_tunes(index_entry)
+        self.assertEqual("The Oran Set", index_title)
+        self.assertEqual("les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel", index_tunes)
+
+    def test_split_title_and_tunes_no_title(self):
+        index_entry = "les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel"
+        (index_title, index_tunes) = split_title_and_tunes(index_entry)
+        self.assertEqual("", index_title)
+        self.assertEqual("les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel", index_tunes)
+
+    def test_split_title_and_tunes_no_title_spurious_spaces(self):
+        index_entry = "   les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel   "
+        (index_title, index_tunes) = split_title_and_tunes(index_entry)
+        self.assertEqual("", index_title)
+        self.assertEqual("les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel", index_tunes)
+
+    def test_split_title_and_tunes_empty_title(self):
+        index_entry = "    :les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel"
+        (index_title, index_tunes) = split_title_and_tunes(index_entry)
+        self.assertEqual("", index_title)
+        self.assertEqual("les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel", index_tunes)
+
+    def test_split_title_and_tunes_no_tune(self):
+        index_entry = "The Oran Set:"
+        (index_title, index_tunes) = split_title_and_tunes(index_entry)
+        self.assertEqual("The Oran Set", index_title)
+        self.assertEqual("", index_tunes)
 
 
 if __name__ == '__main__':

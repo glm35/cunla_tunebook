@@ -234,7 +234,17 @@ def gen_tune(label, title, type):
 # Make the index of sets
 # ------------------------------------------------------------------------
 
-def format_set_index_entry(tunes):
+def split_title_and_tunes(index_entry):
+    if -1 == index_entry.find(":"):
+        # No title
+        return ("", index_entry.strip())
+
+    l = index_entry.split(":")
+    tunes = l[1].strip()
+    title = l[0].strip()
+    return (title, tunes)
+
+def format_set_index_entry(tunes, title=""):
     entry = ""
 
     # Do all the tunes have the same type?
@@ -250,11 +260,20 @@ def format_set_index_entry(tunes):
                 same_type = False
                 break
 
+    if title != "":
+        entry = '\emph{' + title + '}'
+
     factorize_type = False
     if len(tunes) >= 2:
         if same_type and set_type != "":
-            entry = set_type.capitalize() + "s: "
+            if title != "":
+                entry += " (" + set_type.lower() + "s" + ")"
+            else:
+                entry += set_type.capitalize() + "s"
             factorize_type = True
+
+    if title != "" or factorize_type:
+        entry += ': '
 
     first_tune = True
     for tune in tunes:
@@ -312,7 +331,8 @@ def gen_index_of_sets(tunes):
             continue
         if line[0] == '#':
             continue
-        labels = line.split(',')
+        (set_title, set_tunes) = split_title_and_tunes(line)
+        labels = set_tunes.split(',')
         entry = []
         tune_set = []
         for label in labels:
@@ -323,7 +343,7 @@ def gen_index_of_sets(tunes):
                                  label + "\n")
                 continue
             tune_set.append(Tune(label, tunes[label]['title'], tunes[label]['type']))
-        index_entry = format_set_index_entry(tune_set)
+        index_entry = format_set_index_entry(tune_set, set_title)
         data.append(index_entry + "\n\n")
 
     f.close()

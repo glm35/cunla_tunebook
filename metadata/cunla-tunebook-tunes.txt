@@ -73,6 +73,10 @@ toss_the_feathers
 the_wind_that_shakes_the_barley
 the_fermoye_lasses
 
+unnamed_polka
+connie_in_the_pool
+ballyvourney_polka
+
 paddy_taylor
 rakish_paddy
 air_cretois
@@ -82,5 +86,3 @@ the_mistress_on_the_floor
 dublin_reel
 the_crying_game
 the_fairy_jig
-ballyvourney_polka
-connie_in_the_pool

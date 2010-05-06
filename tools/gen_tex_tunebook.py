@@ -278,9 +278,11 @@ def format_set_index_entry(tunes, title=""):
     first_tune = True
     for tune in tunes:
         tune_ref = '\emph{' + tune.title + '}'
+        tune_ref += '~('
         if tune.type != "" and tune.type != None and not factorize_type:
-            tune_ref += '~(' + tune.type + ')'
-        tune_ref += ',~p.\pageref{' + tune.label + '}'
+            tune_ref += tune.type + ',~'
+        tune_ref += 'p.\pageref{' + tune.label + '}'
+        tune_ref += ')'
         if not first_tune:
             entry += '~/ '
         first_tune = False

@@ -30,6 +30,10 @@
 - sections: pouvoir définir des sections "latex" dans
   "cunla-tunes.txt". Exemple: "Airs sans suite".
 
+- groupement des notes: pouvoir (option?) forcer le groupement des notes
+  en respectant les groupes (notes non séparées par des espaces) dans le
+  .abc. Exemple: the_full_booner
+
 * Cunla tunes
 ** Objectif
 Recueil des airs joués avec Cunla. Mélodie uniquement (pas les accords,
@@ -112,3 +116,7 @@ fonctionne pas (avec et sans ragged-margin)
 Pour avoir un espacement vertical minimal raisonnable entre deux
 morceaux: commencer un nouveau paragraphe à chaque morceau avec
 \paragraph{}.
+* Marketing
+Intérêt d'avoir une sortie propre: pouvoir éditer plus précisemment le
+.ly après conversion (e.g. spécifier manuellement le groupement des
+notes).

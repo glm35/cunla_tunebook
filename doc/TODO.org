@@ -1,4 +1,8 @@
 * Feuille de route TDD
+"Crash" si pas de champ "meter"
+
+"Crash" si manque fin de répetition: |: ... :: ... |
+
 +\emph{Come Upstairs with Me}~(slip jig),~p.\pageref{come_upstairs_with_me}+
 +Classement alphabétique d'après le titre+
 +Mise en retrait du déterminant ("The Yellow Tinker" => "Yellow Tinker, The")+

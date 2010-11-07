@@ -130,6 +130,7 @@ help:
 	@echo "        pdf: pdf format (broken output: use ps)"
 	@echo "Other targets:"
 	@echo "        view: view the book in dvi format"
+	@echo "        viewpdf: view the book in PDF format"
 	@echo "        viewps: view the book in PostScript format"
 	@echo "        table: build the chord table"
 	@echo "        vtable: view the chord table"

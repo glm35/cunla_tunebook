@@ -20,4 +20,5 @@ The Obstetrical Set: the_thermometer, reel_amix, the_roaring_barmaid, the_full_b
 the_humours_of_whiskey, breeze_in_batz, come_upstairs_with_me
 toss_the_feathers, the_wind_that_shakes_the_barley, the_fermoye_lasses
 taureen_derby_polka, connie_in_the_pool, ballyvourney_polka
-cronin_s_hornpipe, walshe_s_hornpipe
+cronin_s_hornpipe, walshe_s_hornpipe, francois_hornpipe
+full_moon, the_millstream

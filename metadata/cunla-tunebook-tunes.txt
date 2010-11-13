@@ -81,6 +81,7 @@ ballyvourney_polka
 
 cronin_s_hornpipe
 walshe_s_hornpipe
+francois_hornpipe
 
 full_moon
 the_millstream

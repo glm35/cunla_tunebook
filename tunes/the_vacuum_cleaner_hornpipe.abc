@@ -2,9 +2,9 @@ X:1
 T:Boris 40's
 C:François Champs
 M:4/4
-R:hornpipe
+R:Hornpipe
 K:A
-cd |: edce dcBd | cdcB ABAE | F2dc B2BA | GBef edcd |
-      edce dcBd | cdcB ABAE | F2CE DFEG | FEcB A2cd :|
-|: eaga efed | caga efec | dffe ^dBba | gaba gecd |
-   eaga efed | caga efec | dBB2 dcBA | GEcB A2cd :|
+cd |: "A" edce "D" dcBd | "F#m" cdcB "D" ABAE | F2dc B2BA | "E" GBef edcd |
+      "A" edce "D" dcBd | "F#m" cdcB "D" ABAE | "F#m" F2CE "D" DFEG | "E" FEcB "A" A2cd :|
+|: "A" eaga efed | caga efec | "Bm" dffe "B" ^dBba | "E" gaba gecd |
+   "A" eaga efed | "C#m" caga efec | "Bm" dBB2 "D" dcBA | "E" GEcB "A" A2cd :|

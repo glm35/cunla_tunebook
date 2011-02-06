@@ -87,6 +87,7 @@ full_moon
 the_millstream
 my_maryanne
 
+# La réserve à Cunla
 paddy_taylor
 rakish_paddy
 air_cretois
@@ -96,5 +97,9 @@ the_mistress_on_the_floor
 dublin_reel
 the_crying_game
 the_fairy_jig
+boris_40_s
+cyrille_40_s
 
+# La réserve à Gwen
 the_farley_bridge
+muireann_s_jig

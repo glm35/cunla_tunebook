@@ -1,1 +1,6 @@
-../../../../bugs/bug0003.abc
+X:1
+T:Invalid conversion of repeat/alternative/repeat sequence
+K:C
+M:C
+|: C4 E4 |1 G4 B4 :|2 G4 A4
+|: D4 F4 | A4 c4 :|

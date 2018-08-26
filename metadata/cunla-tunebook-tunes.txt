@@ -105,5 +105,7 @@ dublin_reel
 boris_40_s
 cyrille_40_s
 as_tears_go_by
+the_recovery
+the_bucks_of_oranmore
 the_last_pint
 

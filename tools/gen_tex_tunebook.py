@@ -148,6 +148,7 @@ class Tune():
         if self.type == None or self.type == "":
             entry = "\emph{{{0}}},~p.\pageref{{{1}}}".format(self.title, self.label)
         else:
+            # Example: \emph{Come Upstairs with Me}~(slip jig),~p.\pageref{come_upstairs_with_me}
             entry = "\emph{{{0}}}~({1}),~p.\pageref{{{2}}}".format(self.title, self.type, self.label)
         return entry
 

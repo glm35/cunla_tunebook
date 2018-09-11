@@ -1,8 +1,0 @@
-Recopier gchords.sty dans le repertoire:
-
-  /usr/local/share/texmf/tex/latex/misc
-
-puis appeler le programme:
-
-  # texhash
-

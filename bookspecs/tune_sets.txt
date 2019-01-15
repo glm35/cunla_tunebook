@@ -1,27 +1,27 @@
 # Cunla sets
 yemen, the_islay_ranter_s_reel, johnny_s_gone_to_france
-father_o_flynn, brid_harper_s
-cliff_hornpipe, humours_of_tullycrine, bantry_bay
+father_o_flynn, the_rock_on_the_clyde
+the_cliff, humours_of_tullycrine, bantry_bay
 robbie_hannan_s, allistrum_march, the_yellow_wattle
-brian_o_lynn, cathal_mc_connell_s, the_woods_of_the_old_limerick
+brian_o_lynn, cathal_mcconnell_s, the_woods_of_the_old_limerick
 kalyana, kitty_lie_over
-con_cassidy_s, teelin_island, the_pigs_back, the_maid_of_the_cherry_tree
+con_cassidy_s, teelin_island, the_pig_s_back, the_maid_of_the_cherry_tree
 pritouritze, sheila_coyle_s, san_miguel_s
 road_to_thales, the_green_gates, the_boys_of_malin
 humours_of_ballylaughlin, four_courts
 the_flight_of_the_butterfly, the_goat_island_reel
 farewell_to_whalley_range, johnny_loves_molly
-our_kate, piper_s_chair, paddy_fahy_s
+our_kate, the_piper_s_chair, paddy_fahy_s
 the_mountain_road, the_twelve_pins
 the_humours_of_kilclogher, the_kings_of_innishbofin, garrevaques
-the_recruiting_sergeant, cailleach_reel, the_fawn_on_the_frozen_lake, bill_harte_s
+the_recruiting_sergeant, ruileadh_cailleach__sheatadh_cailleach, the_fawn_on_the_frozen_lake, bill_harte_s
 The Oran Set: les_ridees_de_lanvaudan, union_street_session, the_rolling_waves_of_frehel
 The Obstetrical Set: the_thermometer, reel_amix, the_roaring_barmaid, the_full_booner
 the_humours_of_whiskey, breeze_in_batz, come_upstairs_with_me
-toss_the_feathers, the_wind_that_shakes_the_barley, the_fermoye_lasses
+toss_the_feathers, the_wind_that_shakes_the_barley, the_fermoy_lasses
 toss_the_feathers, the_mistress_on_the_floor, the_repeal_of_the_union
-taureen_derby_polka, connie_in_the_pool, ballyvourney_polka
-cronin_s_hornpipe, walshe_s_hornpipe, francois_hornpipe
+taureen_derby_polka, connie_in_the_pool, the_ballyvourney_polka
+cronin_s_hornpipe, walshe_s, francois__hornpipe
 full_moon, the_millstream, my_maryanne
 # donegal_lasses, robbie_hannan_s, mathys_birthday
 # apples_in_winter, munster_buttermilk

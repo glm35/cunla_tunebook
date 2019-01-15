@@ -1,111 +1,111 @@
-yemen
-the_islay_ranter_s_reel
-johnny_s_gone_to_france
+tunes/yemen.abc
+tunes/the_islay_ranter_s_reel.abc
+tunes/johnny_s_gone_to_france.abc
 
-father_o_flynn
-brid_harper_s
+tunes/father_o_flynn.abc
+tunes/the_rock_on_the_clyde.abc
 
-cliff_hornpipe
-humours_of_tullycrine
-bantry_bay
+tunes/the_cliff.ly
+tunes/humours_of_tullycrine.ly
+tunes/bantry_bay.ly
 
-robbie_hannan_s
-allistrum_march
-the_yellow_wattle
+tunes/robbie_hannan_s.ly
+tunes/allistrum_march.ly
+tunes/the_yellow_wattle.ly
 
-brian_o_lynn
-cathal_mc_connell_s
-the_woods_of_the_old_limerick
+tunes/brian_o_lynn.abc
+tunes/cathal_mcconnell_s.abc
+tunes/the_woods_of_the_old_limerick.abc
 
-kalyana
-kitty_lie_over
+tunes/kalyana.abc
+tunes/kitty_lie_over.abc
 
-con_cassidy_s
-teelin_island
-the_pigs_back
-the_maid_of_the_cherry_tree
+tunes/con_cassidy_s.ly
+tunes/teelin_island.abc
+tunes/the_pig_s_back.abc
+tunes/the_maid_of_the_cherry_tree.ly
 
-pritouritze
-sheila_coyle_s
-san_miguel_s
+tunes/pritouritze.ly
+tunes/sheila_coyle_s.ly
+tunes/san_miguel_s.ly
 
-road_to_thales
-the_green_gates
-the_boys_of_malin
+tunes/road_to_thales.abc
+tunes/the_green_gates.abc
+tunes/the_boys_of_malin.abc
 
-humours_of_ballylaughlin
-four_courts
+tunes/humours_of_ballylaughlin.abc
+tunes/four_courts.abc
 
-the_flight_of_the_butterfly
-the_goat_island_reel
+tunes/the_flight_of_the_butterfly.abc
+tunes/the_goat_island_reel.abc
 
-farewell_to_whalley_range
-johnny_loves_molly
+tunes/farewell_to_whalley_range.ly
+tunes/johnny_loves_molly.abc
 
-our_kate
-piper_s_chair
-paddy_fahy_s
+tunes/our_kate.abc
+tunes/the_piper_s_chair.abc
+tunes/paddy_fahy_s.ly
 
-the_mountain_road
-the_twelve_pins
+tunes/the_mountain_road.abc
+tunes/the_twelve_pins.abc
 
-the_humours_of_kilclogher
-the_kings_of_innishbofin
-garrevaques
+tunes/the_humours_of_kilclogher.abc
+tunes/the_kings_of_innishbofin.abc
+tunes/garrevaques.abc
 
-the_recruiting_sergeant
-cailleach_reel
-the_fawn_on_the_frozen_lake
-bill_harte_s
+tunes/the_recruiting_sergeant.abc
+tunes/ruileadh_cailleach__sheatadh_cailleach.abc
+tunes/the_fawn_on_the_frozen_lake.abc
+tunes/bill_harte_s.abc
 
-les_ridees_de_lanvaudan
-union_street_session
-the_rolling_waves_of_frehel
+tunes/les_ridees_de_lanvaudan.abc
+tunes/union_street_session.abc
+tunes/the_rolling_waves_of_frehel.abc
 
-the_thermometer
-reel_amix
-the_roaring_barmaid
-the_full_booner
+tunes/the_thermometer.abc
+tunes/reel_amix.abc
+tunes/the_roaring_barmaid.abc
+tunes/the_full_booner.ly
 
-the_humours_of_whiskey
-breeze_in_batz
-come_upstairs_with_me
+tunes/the_humours_of_whiskey.abc
+tunes/breeze_in_batz.abc
+tunes/come_upstairs_with_me.abc
 
-taureen_derby_polka
-connie_in_the_pool
-ballyvourney_polka
+tunes/taureen_derby_polka.abc
+tunes/connie_in_the_pool.abc
+tunes/the_ballyvourney_polka.abc
 
-cronin_s_hornpipe
-walshe_s_hornpipe
-francois_hornpipe
+tunes/cronin_s_hornpipe.abc
+tunes/walshe_s.abc
+tunes/francois__hornpipe.abc
 
-full_moon
-the_millstream
-my_maryanne
+tunes/full_moon.abc
+tunes/the_millstream.abc
+tunes/my_maryanne.abc
 
-the_farley_bridge
+tunes/the_farley_bridge.abc
 
-toss_the_feathers
-the_mistress_on_the_floor
-the_repeal_of_the_union
+tunes/toss_the_feathers.abc
+tunes/the_mistress_on_the_floor.abc
+tunes/the_repeal_of_the_union.abc
 
-munster_buttermilk
+tunes/munster_buttermilk.abc
 
 # La réserve à Cunla
-the_crying_game
-the_fairy_jig
-air_cretois
-air_moving
-the_tinkerman_s_wife
-paddy_taylor
-rakish_paddy
-the_wind_that_shakes_the_barley
-the_fermoye_lasses
-dublin_reel
-boris_40_s
-cyrille_40_s
-as_tears_go_by
-the_recovery
-the_bucks_of_oranmore
-the_last_pint
+tunes/the_crying_game.ly
+tunes/the_fairy_jig.abc
+tunes/air_cretois.abc
+tunes/air_moving.abc
+tunes/the_tinkerman_s_wife.abc
+tunes/paddy_taylor.abc
+tunes/rakish_paddy.ly
+tunes/the_wind_that_shakes_the_barley.abc
+tunes/the_fermoy_lasses.abc
+tunes/dublin_reel.abc
+tunes/boris_40_s.abc
+tunes/cyrille_40_s.abc
+tunes/as_tears_go_by.abc
+tunes/the_recovery.abc
+tunes/the_bucks_of_oranmore.abc
+tunes/the_last_pint.abc
 

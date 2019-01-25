@@ -87,7 +87,6 @@ tunes/the_farley_bridge.abc
 
 tunes/toss_the_feathers.abc
 tunes/the_mistress_on_the_floor.abc
-tunes/the_repeal_of_the_union.abc
 
 tunes/munster_buttermilk.abc
 
@@ -107,5 +106,6 @@ tunes/cyrille_40_s.abc
 tunes/as_tears_go_by.abc
 tunes/the_recovery.abc
 tunes/the_bucks_of_oranmore.abc
-tunes/the_last_pint.abc
+
+cunla_tunebook.abc
 

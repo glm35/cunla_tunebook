@@ -1,4 +1,70 @@
-X: 1
+%%abc-charset utf-8
+
+X:1
+T:The West Clare Railway
+C:Martin 'Junior' Crehan
+I:https://thesession.org/tunes/10091
+D:Mick O'Brien, "May Morning Dew", 1996
+R:Reel
+M:2/2
+K:Ador
+|: EGAB c2AB | cBcd cAGD | EGAB cBcd |1 ecde cAAG :|2 ecde cAAe ||
+| aged c2ce | aged cAAe | aged cBce | gfga gede |
+| aged c2ce | aged cAd2 | faaf gedB | cded cAAG ||
+
+X:2
+T:The Repeal of the Union
+R:Reel
+M:C|
+K:Dmix
+|: ADD/D/D AGFD | E2cE dEcd | ADDD AGFA |1 GEcE Dd^cd :|2 GE=cE D4 ||
+| d2de fded | ^cABd cAG=c | Adde fded | ^cAGE FDD2 |
+| Adde fded | ^cABd cAdg | fee^c dgfd | =cAGE Dd^cd ||
+
+X:3
+T:Music In The Glen
+R:reel
+M:2/2
+Q:1/2=90
+K:Gmaj
+|: G2BG EGDC|B,DGB AGAB|c2ec BcdB|cABG AGED|
+   GABG EGDC|B,DGB AGAB|cdef g2ge|dBAB G2D2:|
+|: B/2A/2G dG eGdG|BGdB cAAA|B/2A/2GBd edef|gdBG AGEG|
+   BGBd edef|g2fg afdf|g2fg egdB | cABG AGEG:||
+
+X:4
+T:Miltimber Jig
+R: jig
+M: 6/8
+L: 1/8
+K:D
+|: AFD A,DF | Adf a2a | gfe dcB | ABA GFE |
+   AFD A,DF | Adf a2a | gfe cAa |1 fdd d3 :|2 fdd d2e |
+|: f2f fga | g2g gef | gfe dcB | AaA a2g |
+   f2f fga | g2g gef | gfe cAa |1 fdd d2e :|2 fdd d3 ||
+
+X:5
+T:The Lilting Fisherman
+M:6/8
+K:G
+|: dBG GBd | g2g ege | dBG GFG | AFD cBc |
+   dBG GBd | g2g ege | dBG FGA |1 BGF G3 :|2 BGF G2B |
+K:D
+|: A3 AFA | f2f f2e | dce dcB | AFF F2G |
+   A2A DFA | B3 B2d | c2c ABc |1 dfe dcB :|2 dfe d3 ||
+
+X:6
+T:Mum's Jig
+R: jig
+M: 6/8
+L: 1/8
+K:Ador
+|: EAA ABc | B2A A2G | EAA ABc | B2B BAG |
+   EAA ABc | B2A Agf | g2g gfe | dBG BAG :|
+|: AaA g2g | fed edB | AaA g3 | BAG BAG |
+   AaA g2g | fed edB | ABc Bcd | cde dBG :|
+
+X: 7
 T: Jock Brown's 70th
 C: Gordon Duncan
 R: hornpipe
@@ -27,77 +93,100 @@ AAGA AGAA|GAAG AAdA|GAde d2dA|dcde d2dc:|
 %|:e>f2/g2/ f|d e>f2/g2/ |fd g>e | dc Bd|
 % dc/B/ cg|de cA|B/c/B/A/ Gd|BA A2:| 
 
-X:3
-T:Kalyana (répété)
-C:Emer Mayock
-D:Lunasa: Sé
-R:Jig
-M:6/8
-Q:3/8=100
-K:D
-|: F2d cAF | A2B AFE | F2d cAd | cAd edc |
-   F2d cAF | A2B AFE | Fdd dcd |1 efd cAG :|2 efd cBA
-|: e2e ede | f2d dcd | e2e ede | fga fed |
-   e2e ede | f2d fga | g2e edB |1 d2e dBd :|2 d2e dBG |]
-%
-|: F2d cAF | A2B AFE | F2d cAd | cAd edc |
-   F2d cAF | A2B AFE | Fdd dcd |1 efd cAG :|2 efd cBA
-|: e2e ede | f2d dcd | e2e ede | fga fed |
-   e2e ede | f2d fga | g2e edB |1 d2e dBd :|2 d2e dBG |]
-%
-|: F2d cAF | A2B AFE | F2d cAd | cAd edc |
-   F2d cAF | A2B AFE | Fdd dcd |1 efd cAG :|2 efd cBA
-|: e2e ede | f2d dcd | e2e ede | fga fed |
-   e2e ede | f2d fga | g2e edB |1 d2e dBd :|2 d2e dBG |]
-%
-|: F2d cAF | A2B AFE | F2d cAd | cAd edc |
-   F2d cAF | A2B AFE | Fdd dcd |1 efd cAG :|2 efd cBA
-|: e2e ede | f2d dcd | e2e ede | fga fed |
-   e2e ede | f2d fga | g2e edB |1 d2e dBd :|2 d2e dBG |]
-%
-|: F2d cAF | A2B AFE | F2d cAd | cAd edc |
-   F2d cAF | A2B AFE | Fdd dcd |1 efd cAG :|2 efd cBA
-|: e2e ede | f2d dcd | e2e ede | fga fed |
-   e2e ede | f2d fga | g2e edB |1 d2e dBd :|2 d2e dBG |]
-%
-|: F2d cAF | A2B AFE | F2d cAd | cAd edc |
-   F2d cAF | A2B AFE | Fdd dcd |1 efd cAG :|2 efd cBA
-|: e2e ede | f2d dcd | e2e ede | fga fed |
-   e2e ede | f2d fga | g2e edB |1 d2e dBd :|2 d2e dBG |]
+X:8
+T:Anouk's Babblilting
+C:F.Champs
+%H:08.06.2012
+M:4/4
+Q:1/2=90
+L:1/8
+R:Reel
+K:G
+|:"D"Dddd dcAc | "G"BGGF GABG | "C"EGcG "G"DGBG | "D"FADd edcA
+| "G"Bddd dcAc | "G"BGGF "C"EGcG | "G"DGBG "D"FADd |1 "D"edcA "G"G2FE :|2 "D"edcA "G"G2FG
+|:"D"ADDD dDDD | "D"cedc AGFG | "D"ADDD cedc | "Am"AAAG ADFG
+| "D"ADDD cedc | "G"BGGF "C"EGcG | "G"DGBG "D"FADd |1 "D"edcA "G"G2FG :|2 "D"edcA "G"G2FE ||
 
-X:4
+%|:Dddd dcAc | BGGF GABG | EGcG DGBG | FADd edcA
+%| Bddd dcAc | BGGF EGcG | DGBG FADd | edcA |1 G2FE :|2 G2FG
+%|:ADDD dDDD | cedc AGFG | ADDD cedc | AAAG ADFG
+%| ADDD cedc | BGGF EGcG | DGBG FADd | edcA |1 G2FG :|2 G2FE
+
+X:9
 T:The Last Pint
 R:Jig
 I:Appris en répé le 28 septembre 2015
 K:D
+M:6/8
 Q:3/8=110
 |: dAB d2A | Bdf efd | B2B ede | faa gfe |
    dAB d2A | Bdf efd | B2B edB |1 AFE D3 :|2 AFE DFA 
 |: B2B BAF | ABc d2B | ABA AFE | EFA DFA |
    B2B BAF | ABc d2c | d2d dBA |1 a2g f2d :|2 a2g f2e ||
 
-X:5
-T:The West Clare Railway
-C:Martin 'Junior' Crehan
-I:https://thesession.org/tunes/10091
-D:Mick O'Brien, "May Morning Dew", 1996
-R:Reel
+X:10
+T:The Torn Jacket
+R:reel
+M:4/4
+L:1/8
+Q:2/4=90
+K:Dmaj
+|:F3A d2 ed|cAAB cdec|FEFA d2 ed|cAGE EDDE|
+FEFA d2 ed|cAAB cdec|dcde f2 ed|cAGE EDD2:|
+|: FAdf a2 af|g2 gf gfed|cAA2 cdef|gfed cAGE|
+| FAdf a2 ab|g2 gf gfef|gaba gfed|cAGE EDD2 :|
+
+X:11
+T:Fisherman's Lilt
+D:Bothy Band: Out of Wind Into the Sun
+Z:Gwenaël Lambrouin, 2016-12, d'après l'interprétation de Cyrille 
+R:reel
+M:2/2 
+Q:1/2=90
+K:C
+|: GGGE GAcd | edcB cAAA | GEEE GAcd |1 edcB c3A :|2 edcB c3d | 
+|: eggg ageg | gede cAAA | eggg eaaa | gaag a3g | 
+   eggg ageg | gede cAAA | GEEE GAcd |1 edcB c3d :|2 edcB c3A |
+
+X:12
+T:Sporting Nell
+D:Mick O'Brien: May Morning Dew (1996)
+Z:Gwenaël Lambrouin, 2016-12, d'après l'interprétation de Cyrille 
+R:reel
 M:2/2
-K:Ador
-|: EGAB c2AB | cBcd cAGD | EGAB cBcd |1 ecde cAAG :|2 ecde cAAe ||
-| aged c2ce | aged cAAe | aged cBce | gfga gede |
-| aged c2ce | aged cAd2 | faaf gedB | cded cAAG ||
-
-X:6
-T:The Repeal of the Union
-R:Reel
-M:C|
 K:Dmix
-|: ADD/D/D AGFD | E2cE dEcd | ADDD AGFA |1 GEcE Dd^cd :|2 GE=cE D4 ||
-| d2de fded | ^cABd cAG=c | Adde fded | ^cAGE FDD2 |
-| Adde fded | ^cABd cAdg | fee^c dgfd | =cAGE Dd^cd ||
+|: ADED A2dc | ABAG EFG2 | ADED A2dc |1 AcGE EDEG :|2 AcGE EDD2 | 
+K:Amix
+  cdec d2ed | cdef gedB | cdec dfed | cAGE EDD2 |
+  cdec dfed | cdef g2gd | eaag efd=c | ABAG EFG2 ||
 
-X:7
+X: 13
+T: Boy in the Boat
+C: Trad.
+D: Peter Carberry & Pádraig McGovern: Forgotten Gems (2013)
+Z: Gwenaël Lambrouin d'après l'interprétation de Cyrille Gaillard du 2017-05-18
+R: Reel
+M: 2/2
+K:D
+|: ABAF DFAF | GFEF G2FG | ADED ADED | AFGE DEFG |
+   ABAF DFAF | GFEF G2FG | AFA=c BGBd |1 cAGE DEFG :|2 cAGE D2d2
+|: cded cAAA | cAdB cAAd | cded cAAd | cAGE EDD2 |
+   cded cAAA | cAdB cAB/c/d | effd eged |1 cAGE EDD2 :|2 cAGE DEFG |
+
+X:14
+T:The Old Bush
+D:Matt Molloy & Sean Keane: Contentment is Wealth (1985)
+Z:Gwenaël Lambrouin, 2017-02, d'après l'interprétation de Cyrille Gaillard
+R:reel
+M:2/2
+Q:1/2=80
+K:Ador
+|: A2GA cAAA | d^cde fde=c | A2GA cAAA | dfed cAdc | 
+   A2GA cAAA | d^cde f2fg | afge fde^c |1 dfed cAdc :|2 dfed cAAA |
+|: eggg ed^cd | efge cBcd | eggg aage | dfed cAAA | 
+   eggg aggg | fffe defg | afge fde^c |1 dfed cAAA :|2 dfed cAdc |
+
+X:15
 T:Fjellvåk (Mountain Bird)
 C:Olav Luksengår Mjelva, John Ole Morken & Annlaug Børsheim
 D:Newcastle Piping Festival - Andy Watchorn & Andy May: https://www.youtube.com/watch?v=ny7ZWDqNBTE
@@ -111,24 +200,11 @@ K:G
 |: B3d fg | f4 d2 | B2 d2 fg | f3d fg |
    a3g ed | c4 A2 | B3c B/A/G | A4 D2 |
    B3d fg | f4 d2 | B2 d2 fg | f3d fg |
-   e3d c2 | BA G2 F2 | G6 |1 G4 G2 :| G3 AGF
+   e3d c2 | BA G2 F2 | G6 |1 G4 G2 :|2 G3 AGF |
 |: E3C EF | G2 GD GA | B2 Bc B/A/G | A3 DAB |
    c4 c2 | B3A G2 | A2 d2 d2 | d4 D2 |
    E3C EF | G2 GD GA | B2 Bc B/A/G | A3 DAB |
-   ce Bd Ac | BA GF EF | G6 |1 G3 AGF :| G4 G2
-
-X: 8
-T: Boy in the Boat
-C: Trad.
-D: Peter Carberry & Pádraig McGovern: Forgotten Gems (2013)
-Z: Gwenaël Lambrouin d'après l'interprétation de Cyrille Gaillard du 2017-05-18
-R: Reel
-M: 2/2
-K:D
-|: ABAF DFAF | GFEF G2FG | ADED ADED | AFGE DEFG |
-   ABAF DFAF | GFEF G2FG | AFA=c BGBd |1 cAGE DEFG :|2 cAGE D2d2
-|: cded cAAA | cAdB cAAd | cded cAAd | cAGE EDD2 |
-   cded cAAA | cAdB cAB/c/d | effd eged |1 cAGE EDD2 :|2 cAGE DEFG |
+   ce Bd Ac | BA GF EF | G6 |1 G3 AGF :|2 G4 G2 ||
 
 %X: 9
 %T: Grainne's Jig
@@ -138,7 +214,7 @@ K:D
 %R: Jig
 %K: G
 
-X: 10
+X: 16
 T: Halsway
 C: Nigel Eaton
 D: https://soundcloud.com/nigeleaton/halsway-the-very-first-version
@@ -159,7 +235,7 @@ K: G
    fgd2- dgfg | c2c2 B4   | A2Bc dcBA | c2B2 A3g |
    fgd2- dgfg | c2c2 B4   | G2AB cBAG | B2A2 G2Bc |
 
-X: 11
+X: 17
 T: The Ladies Pantalettes
 C: Trad.
 Z: Gwen 2019-01-02

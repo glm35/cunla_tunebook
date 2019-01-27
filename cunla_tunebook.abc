@@ -1,6 +1,33 @@
 %%abc-charset utf-8
 
 X:1
+T:Kitty Lie Over
+C:Trad.
+D:Mick O'Brien & Caoimhín Ó Raghallaigh: Kitty lie over (2003)
+R:Jig
+M:6/8
+Q:150
+K:D
+|: AFD DFA | Add ABA | ABA FFF | GFG EFG |
+   AFD DFA | Add ABA | ABA F2E |1 EDD d2B :|2 EDD D2e
+|: fdd ede | fdc d2e | fff def | gge efg
+           |1 fed B2A | AdF G2B | ABA F2E | EDD D2e :|
+	   [2 afd B2A | AdF G2B | ABA F2E | EDD d2B |
+
+X:2
+T:Munster Buttermilk
+D:Mick O'Brien & Caoimhín Ó Raghallaigh: Kitty lie over (2003)
+R:Jig
+M:6/8
+K:D
+| d2f edB | BAF FEF | AFD DFA | BAF EFA |
+  d2f edB | BAF FEF | AFD DEF | EDD D2D |
+  d2f edB | BAF FEF | AAA DFA | BAF EFA |
+  d2f edB | BAF FEF | AFD DEF | EDD d2B
+|: AFA d2e | f/g/af fed | gge edB | def edB |
+   AFA d2e | f/g/af fed | edB def |1 edd d2B :|2 edd ABc |
+
+X:3
 T:The West Clare Railway
 C:Martin 'Junior' Crehan
 I:https://thesession.org/tunes/10091
@@ -12,7 +39,7 @@ K:Ador
 | aged c2ce | aged cAAe | aged cBce | gfga gede |
 | aged c2ce | aged cAd2 | faaf gedB | cded cAAG ||
 
-X:2
+X:4
 T:The Repeal of the Union
 R:Reel
 M:C|
@@ -21,7 +48,7 @@ K:Dmix
 | d2de fded | ^cABd cAG=c | Adde fded | ^cAGE FDD2 |
 | Adde fded | ^cABd cAdg | fee^c dgfd | =cAGE Dd^cd ||
 
-X:3
+X:5
 T:Music In The Glen
 R:reel
 M:2/2
@@ -32,7 +59,7 @@ K:Gmaj
 |: B/2A/2G dG eGdG|BGdB cAAA|B/2A/2GBd edef|gdBG AGEG|
    BGBd edef|g2fg afdf|g2fg egdB | cABG AGEG:||
 
-X:4
+X:6
 T:Miltimber Jig
 R: jig
 M: 6/8
@@ -43,7 +70,7 @@ K:D
 |: f2f fga | g2g gef | gfe dcB | AaA a2g |
    f2f fga | g2g gef | gfe cAa |1 fdd d2e :|2 fdd d3 ||
 
-X:5
+X:7
 T:The Lilting Fisherman
 M:6/8
 K:G
@@ -53,7 +80,7 @@ K:D
 |: A3 AFA | f2f f2e | dce dcB | AFF F2G |
    A2A DFA | B3 B2d | c2c ABc |1 dfe dcB :|2 dfe d3 ||
 
-X:6
+X:8
 T:Mum's Jig
 R: jig
 M: 6/8
@@ -64,7 +91,7 @@ K:Ador
 |: AaA g2g | fed edB | AaA g3 | BAG BAG |
    AaA g2g | fed edB | ABc Bcd | cde dBG :|
 
-X: 7
+X: 9
 T: Jock Brown's 70th
 C: Gordon Duncan
 R: hornpipe
@@ -93,7 +120,7 @@ AAGA AGAA|GAAG AAdA|GAde d2dA|dcde d2dc:|
 %|:e>f2/g2/ f|d e>f2/g2/ |fd g>e | dc Bd|
 % dc/B/ cg|de cA|B/c/B/A/ Gd|BA A2:| 
 
-X:8
+X:10
 T:Anouk's Babblilting
 C:F.Champs
 %H:08.06.2012
@@ -112,7 +139,7 @@ K:G
 %|:ADDD dDDD | cedc AGFG | ADDD cedc | AAAG ADFG
 %| ADDD cedc | BGGF EGcG | DGBG FADd | edcA |1 G2FG :|2 G2FE
 
-X:9
+X:11
 T:The Last Pint
 R:Jig
 I:Appris en répé le 28 septembre 2015
@@ -124,7 +151,7 @@ Q:3/8=110
 |: B2B BAF | ABc d2B | ABA AFE | EFA DFA |
    B2B BAF | ABc d2c | d2d dBA |1 a2g f2d :|2 a2g f2e ||
 
-X:10
+X:12
 T:The Torn Jacket
 R:reel
 M:4/4
@@ -136,7 +163,7 @@ FEFA d2 ed|cAAB cdec|dcde f2 ed|cAGE EDD2:|
 |: FAdf a2 af|g2 gf gfed|cAA2 cdef|gfed cAGE|
 | FAdf a2 ab|g2 gf gfef|gaba gfed|cAGE EDD2 :|
 
-X:11
+X:13
 T:Fisherman's Lilt
 D:Bothy Band: Out of Wind Into the Sun
 Z:Gwenaël Lambrouin, 2016-12, d'après l'interprétation de Cyrille 
@@ -148,7 +175,7 @@ K:C
 |: eggg ageg | gede cAAA | eggg eaaa | gaag a3g | 
    eggg ageg | gede cAAA | GEEE GAcd |1 edcB c3d :|2 edcB c3A |
 
-X:12
+X:14
 T:Sporting Nell
 D:Mick O'Brien: May Morning Dew (1996)
 Z:Gwenaël Lambrouin, 2016-12, d'après l'interprétation de Cyrille 
@@ -160,7 +187,7 @@ K:Amix
   cdec d2ed | cdef gedB | cdec dfed | cAGE EDD2 |
   cdec dfed | cdef g2gd | eaag efd=c | ABAG EFG2 ||
 
-X: 13
+X: 15
 T: Boy in the Boat
 C: Trad.
 D: Peter Carberry & Pádraig McGovern: Forgotten Gems (2013)
@@ -173,7 +200,7 @@ K:D
 |: cded cAAA | cAdB cAAd | cded cAAd | cAGE EDD2 |
    cded cAAA | cAdB cAB/c/d | effd eged |1 cAGE EDD2 :|2 cAGE DEFG |
 
-X:14
+X:16
 T:The Old Bush
 D:Matt Molloy & Sean Keane: Contentment is Wealth (1985)
 Z:Gwenaël Lambrouin, 2017-02, d'après l'interprétation de Cyrille Gaillard
@@ -186,7 +213,7 @@ K:Ador
 |: eggg ed^cd | efge cBcd | eggg aage | dfed cAAA | 
    eggg aggg | fffe defg | afge fde^c |1 dfed cAAA :|2 dfed cAdc |
 
-X:15
+X:17
 T:Fjellvåk (Mountain Bird)
 C:Olav Luksengår Mjelva, John Ole Morken & Annlaug Børsheim
 D:Newcastle Piping Festival - Andy Watchorn & Andy May: https://www.youtube.com/watch?v=ny7ZWDqNBTE
@@ -214,7 +241,7 @@ K:G
 %R: Jig
 %K: G
 
-X: 16
+X: 18
 T: Halsway
 C: Nigel Eaton
 D: https://soundcloud.com/nigeleaton/halsway-the-very-first-version
@@ -235,7 +262,7 @@ K: G
    fgd2- dgfg | c2c2 B4   | A2Bc dcBA | c2B2 A3g |
    fgd2- dgfg | c2c2 B4   | G2AB cBAG | B2A2 G2Bc |
 
-X: 17
+X: 19
 T: The Ladies Pantalettes
 C: Trad.
 Z: Gwen 2019-01-02

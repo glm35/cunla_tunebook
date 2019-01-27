@@ -23,5 +23,6 @@ toss_the_feathers, the_mistress_on_the_floor, the_repeal_of_the_union
 taureen_derby_polka, connie_in_the_pool, the_ballyvourney_polka
 cronin_s_hornpipe, walshe_s, francois__hornpipe
 full_moon, the_millstream, my_maryanne
+kitty_lie_over, munster_buttermilk
 # donegal_lasses, robbie_hannan_s, mathys_birthday
 # apples_in_winter, munster_buttermilk

@@ -18,7 +18,6 @@ tunes/cathal_mcconnell_s.abc
 tunes/the_woods_of_the_old_limerick.abc
 
 tunes/kalyana.abc
-tunes/kitty_lie_over.abc
 
 tunes/con_cassidy_s.ly
 tunes/teelin_island.abc
@@ -87,8 +86,6 @@ tunes/the_farley_bridge.abc
 
 tunes/toss_the_feathers.abc
 tunes/the_mistress_on_the_floor.abc
-
-tunes/munster_buttermilk.abc
 
 # La réserve à Cunla
 tunes/the_crying_game.ly

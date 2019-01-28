@@ -212,6 +212,19 @@ K:Dmix
 |: FDD/D/D FDGD | FDD/D/D FDFA | d2ed dcAB | c2cA GEEE :|
 
 X:17
+T:Congratulation Reel
+Z:Gwen, 2019-01-28
+C:François Champs
+R:Reel
+M:2/2
+Q:1/2=90
+K:G
+|: d2de dBB/B/B | GABG AGEG | DGGF GABc | dBeB dGAB |
+   d2de dBB/B/B | GABG AGEG | DGGF GABc |1 dBAc BGBc :|2 dBAc BGBd |
+|: gage d2ge | d2cA BGED | gage dged | cdef g2gf |
+   gage d2ge | d2cA BGED | cdef gedB |1 cBAc BGBd :|2 cBAc BGBc |
+
+X:18
 T:The Old Bush
 D:Matt Molloy & Sean Keane: Contentment is Wealth (1985)
 Z:Gwenaël Lambrouin, 2017-02, d'après l'interprétation de Cyrille Gaillard
@@ -224,7 +237,7 @@ K:Ador
 |: eggg ed^cd | efge cBcd | eggg aage | dfed cAAA | 
    eggg aggg | fffe defg | afge fde^c |1 dfed cAAA :|2 dfed cAdc |
 
-X:18
+X:19
 T:Fjellvåk (Mountain Bird)
 C:Olav Luksengår Mjelva, John Ole Morken & Annlaug Børsheim
 D:Newcastle Piping Festival - Andy Watchorn & Andy May: https://www.youtube.com/watch?v=ny7ZWDqNBTE
@@ -252,7 +265,7 @@ K:G
 %R: Jig
 %K: G
 
-X: 19
+X: 20
 T: Halsway
 C: Nigel Eaton
 D: https://soundcloud.com/nigeleaton/halsway-the-very-first-version
@@ -273,7 +286,7 @@ K: G
    fgd2- dgfg | c2c2 B4   | A2Bc dcBA | c2B2 A3g |
    fgd2- dgfg | c2c2 B4   | G2AB cBAG | B2A2 G2Bc |
 
-X: 20
+X: 21
 T: The Ladies Pantalettes
 C: Trad.
 Z: Gwen 2019-01-02

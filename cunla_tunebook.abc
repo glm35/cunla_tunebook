@@ -3,7 +3,7 @@
 X:1
 T:Kitty Lie Over
 C:Trad.
-D:Mick O'Brien & Caoimhín Ó Raghallaigh: Kitty lie over (2003)
+D:Mick O'Brien & Caoimhín Ó Raghallaigh: Kitty Lie Over (2003)
 R:Jig
 M:6/8
 Q:150
@@ -16,7 +16,7 @@ K:D
 
 X:2
 T:Munster Buttermilk
-D:Mick O'Brien & Caoimhín Ó Raghallaigh: Kitty lie over (2003)
+D:Mick O'Brien & Caoimhín Ó Raghallaigh: Kitty Lie Over (2003)
 R:Jig
 M:6/8
 K:D
@@ -61,9 +61,12 @@ K:Gmaj
 
 X:6
 T:Miltimber Jig
-R: jig
-M: 6/8
-L: 1/8
+C:Ian Crichton
+D:Deaf Sheperd: Synergy (1997)
+D:Liz Doherty: Last Orders (1999)
+R:Jig
+M:6/8
+L:1/8
 K:D
 |: AFD A,DF | Adf a2a | gfe dcB | ABA GFE |
    AFD A,DF | Adf a2a | gfe cAa |1 fdd d3 :|2 fdd d2e |
@@ -297,4 +300,17 @@ K: G
 |: BdcA GGGB | AFFF DFAF | BdcA G2ge |1 fdcA BGGA :|2 fdcA BGG2
 |  fgaf g2fg | aaag fdd2 | fgaf g2ag | fdcA BGG2 |
    fgaf g2fg | aaag fdde | fefg a2ag | fdcA d2cA |
+
+X:22
+T:Darby Gallagher’s
+D:Paddy Glackin: Rabharta Ceoil (In Full Spate) (1991)
+Z:Gwen, 2019-01-29
+R:Jig
+M:6/8
+Q:3/8=130
+K:Amix
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Afg |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Afg :|2 ABA Aed |
 

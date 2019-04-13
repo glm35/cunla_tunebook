@@ -872,6 +872,162 @@ eaf g2e dBA G2A|1Bde dBG A3 ABd:|2bde dBG A2B c2B||
 def g2e dBA G2A|1Bde dBG A2B c2B:|2Bde dBG A3 ABd||
 |:eaa age dgg gfg|eaa agf g2b a2g|
 eaf g2e dBA G2A|1Bde dBG A3 ABd:|2bde dBG A2B c2B||
+
+X:24
+T:The Roaring Barmaid
+M:6/8
+Q:3/8=110
+R:Jig
+K:G
+|: GFG EGD | GFG EGD | GFG BGG | dGG BdB |
+   GFG EGD | GFG EGD | GAB deg | deg edB :|
+|: deg b2b- | bab deg | b2b- bag | edB deg |
+   b2b- bag | agg bgg | agg efg | deg edB :|
+%
+|: GFG EGD | GFG EGD | GFG BGG | dGG BdB |
+   GFG EGD | GFG EGD | GAB deg | deg edB :|
+|: deg b2b- | bab deg | b2b- bag | edB deg |
+   b2b- bag | agg bgg | agg efg | deg edB :|
+%
+|: GFG EGD | GFG EGD | GFG BGG | dGG BdB |
+   GFG EGD | GFG EGD | GAB deg | deg edB :|
+|: deg b2b- | bab deg | b2b- bag | edB deg |
+   b2b- bag | agg bgg | agg efg | deg edB :|
+
+X:25
+T:Darby Gallagher’s
+D:Paddy Glackin: Rabharta Ceoil (In Full Spate) (1991)
+Z:Gwen, 2019-01-29
+R:Jig
+M:6/8
+Q:3/8=130
+K:Amix
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Afg |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Afg :|2 ABA Aed |
+%
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Afg |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Afg :|2 ABA Aed |
+%
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Afg |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Afg :|2 ABA Aed |
+
+X:26
+T:Darby Gallagher’s (x3) / Miltimber Jig (x3) / The Tea Bag (x3)
+R: jig
+M: 6/8
+L: 1/8
+Q:3/8=110
+K:Amix
+| C6 | C3 C3 |
+K:Amix
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Af=g |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Af=g :|2 ABA Aed |
+%
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Af=g |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Af=g :|2 ABA Aed |
+%
+|: cBA ecA | fed cBA | def gfg | BBB Bed |
+   cBA ecA | fed cBA | c2A BA^G |1 ABA Aed :|2 ABA Af=g |
+|: agf gfe | fed ecA | def gfg | BBB Bfg |
+   agf gfe | fed ecA | c2A BA^G |1 ABA Af=g :|2 ABA Aed |
+%
+% Miltimber Jig (x3)
+K:D
+%
+|: AFD A,DF | Adf a2a | gfe dcB | ABA GFE |
+   AFD A,DF | Adf a2a | gfe cAa |1 fdd d3 :|2 fdd d2e
+|: f2f fga | g2g gef | gfe dcB | AaA a2g |
+   f2f fga | g2g gef | gfe cAa |1 fdd d2e :|2 fdd d3 ||
+%
+|: AFD A,DF | Adf a2a | gfe dcB | ABA GFE |
+   AFD A,DF | Adf a2a | gfe cAa |1 fdd d3 :|2 fdd d2e
+|: f2f fga | g2g gef | gfe dcB | AaA a2g |
+   f2f fga | g2g gef | gfe cAa |1 fdd d2e :|2 fdd d3 ||
+%
+|: AFD A,DF | Adf a2a | gfe dcB | ABA GFE |
+   AFD A,DF | Adf a2a | gfe cAa |1 fdd d3 :|2 fdd d2e
+|: f2f fga | g2g gef | gfe dcB | AaA a2g |
+   f2f fga | g2g gef | gfe cAa |1 fdd d2e :|2 fdd d3 ||
+%
+% The Tea Bag
+K:A
+%
+|: ecA Bcd | ecA BAF | EAA GAB | cc/c/c Bcd |
+   ecA Bcd | ecA BAF | EAA GAB |1 EcB A2a :|2 EcB A2c |
+|: B2B BAF | B2B Bdc | B2B BAF | AcB A2c |
+   B2B BAF | B2B Bcd |1 ecA BAF | EcB A2c :|2 ece fec | ABc dfa ||
+%
+|: ecA Bcd | ecA BAF | EAA GAB | cc/c/c Bcd |
+   ecA Bcd | ecA BAF | EAA GAB |1 EcB A2a :|2 EcB A2c |
+|: B2B BAF | B2B Bdc | B2B BAF | AcB A2c |
+   B2B BAF | B2B Bcd |1 ecA BAF | EcB A2c :|2 ece fec | ABc dfa ||
+%
+|: ecA Bcd | ecA BAF | EAA GAB | cc/c/c Bcd |
+   ecA Bcd | ecA BAF | EAA GAB |1 EcB A2a :|2 EcB A2c |
+|: B2B BAF | B2B Bdc | B2B BAF | AcB A2c |
+   B2B BAF | B2B Bcd |1 ecA BAF | EcB A2c :|2 ece fec | ABc dfa ||
 %
 
+X:27
+T:Brian O'Lynn (x3) / The Cock and the Hen (x3) / The Woods of the Old Limerick (x3)
+R:Jig
+M:6/8
+Q:3/8=110
+K:Ador
+|: cBc A2G | EcB cde | dcA A2G | cde fed
+ | cBc A2G | EcB cde | dcA AGE | GED D3 :|
+|: g2g ged | cAB c2d | eaa age | ed^c def
+ | g2g ged | cAB cde | fed cAG | EAA A3 :|
+%
+|: cBc A2G | EcB cde | dcA A2G | cde fed
+ | cBc A2G | EcB cde | dcA AGE | GED D3 :|
+|: g2g ged | cAB c2d | eaa age | ed^c def
+ | g2g ged | cAB cde | fed cAG | EAA A3 :|
+%
+|: cBc A2G | EcB cde | dcA A2G | cde fed
+ | cBc A2G | EcB cde | dcA AGE | GED D3 :|
+|: g2g ged | cAB c2d | eaa age | ed^c def
+ | g2g ged | cAB cde | fed cAG | EAA A3 :|
+%
+%T:Cathal McConnell's
+%T:The Cock and the Hen (d'après François)
+M:9/8
+K:A
+|: F2F FEF c2A | F2F FEF AFE | F2F FEF c2d | ecA BAF AFE :|
+|: ecA ABc dfa | ecA ABc BAF | ecA ABc dcB | cBA BAF AFE :|
+%
+|: F2F FEF c2A | F2F FEF AFE | F2F FEF c2d | ecA BAF AFE :|
+|: ecA ABc dfa | ecA ABc BAF | ecA ABc dcB | cBA BAF AFE :|
+%
+|: F2F FEF c2A | F2F FEF AFE | F2F FEF c2d | ecA BAF AFE :|
+|: ecA ABc dfa | ecA ABc BAF | ecA ABc dcB | cBA BAF AFE :|
+%
+%T:The Woods of the Old Limerick
+M:6/8
+K:G
+|: BAG ABc | dBg fdc | BAG ABc | ADD DFA
+ | BAG ABc | dBg fdc | BAG ABc |1 A/B/A/G/F G2A :|2 A/B/A/G/F G2a
+|: bgg gag | fdd d2b | c'aa fab | c'af g2a
+ | bgg agf | gag edc | BAG ABc |1 A/B/A/G/F G2a :|2 A/B/A/G/F G4 |]
+%
+|: BAG ABc | dBg fdc | BAG ABc | ADD DFA
+ | BAG ABc | dBg fdc | BAG ABc |1 A/B/A/G/F G2A :|2 A/B/A/G/F G2a
+|: bgg gag | fdd d2b | c'aa fab | c'af g2a
+ | bgg agf | gag edc | BAG ABc |1 A/B/A/G/F G2a :|2 A/B/A/G/F G4 |]
+%
+|: BAG ABc | dBg fdc | BAG ABc | ADD DFA
+ | BAG ABc | dBg fdc | BAG ABc |1 A/B/A/G/F G2A :|2 A/B/A/G/F G2a
+|: bgg gag | fdd d2b | c'aa fab | c'af g2a
+ | bgg agf | gag edc | BAG ABc |1 A/B/A/G/F G2a :|2 A/B/A/G/F G4 |]
+%
 

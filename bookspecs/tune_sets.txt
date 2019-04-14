@@ -27,7 +27,6 @@ kitty_lie_over, munster_buttermilk
 # donegal_lasses, robbie_hannan_s, mathys_birthday
 # apples_in_winter, munster_buttermilk
 ultrad, congratulation_reel
-# en cours:
-darby_gallagher_s, miltimber_jig
-# suivi de: the_tea_bag
+darby_gallagher_s, miltimber_jig, the_tea_bag
+the_continuous_sound, hyacinthe_s_reel, miss_le_goic
 

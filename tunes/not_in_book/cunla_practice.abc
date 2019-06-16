@@ -982,7 +982,7 @@ X:27
 T:Brian O'Lynn (x3) / The Cock and the Hen (x3) / The Woods of the Old Limerick (x3)
 R:Jig
 M:6/8
-Q:3/8=100
+Q:3/8=120
 K:Ador
 A3 A3 | A3 A3 ||
 %
@@ -1138,6 +1138,8 @@ R:Jig
 M:6/8
 Q:3/8=116
 K:Amix
+| B3 B3 | B3 B2d |
+%
 |: e2e edB | dBA A2g | dBd dBA | BAG G2g |
    fed efg | a2a e2a | gfe dBd |1 eAA ABd :|2 eAA Ace |
 |: a2a efg | a2a e2f | g2g def | g2g d2g |

@@ -454,18 +454,20 @@ K:A
 X:33
 T:Castlerock Road
 C:Damien O'Kane
-Z:Joe CSS
-S:https://thesession.org/tunes/10255#setting10255
+Z:Gwen (2020-12)
+D:Brighde Chaimbeul, Ross Ainslie & Steven Byrnes live at Celtic Colours: https://www.youtube.com/watch?v=aiueVh23lUo (2019)
 R:Reel
 M:2/2
 Q:1/2=120
-K:Dmaj
-|: A2AG FAdf | edef dABd | gBdg fAdf | e3d cBAG |
-   A3G FAdf | edef dABd | gBdg fAdf | edef d4 :|
-|: gBdg fAdf | edef dABd | gBdg fAd2- | dcAG FAdf | gBdg fAdf
-|1 edef dABd | gBdg fAdf | eded d3f :|2 edef dDAD | ABde fgaf | edef d3A ||
-|: d2af dafd | edaf daed | ddbg dbgd | cdac dacd |
-    B3A Bcde | f2f2 edBG | ABde fgaf | edef d4  :|
+K:D
+%%MIDI transpose 3
+|: A2AG ABdf | edef dABd | gBdg fAdf |  e2ed cBAG |
+   A3 G ABdf | edef dABd | gBdg fAdf |1 edef d2dB :|2 edef d3 f |
+|: gBdg fAdf | edef dABd | gBdg fed2- | dcAG ABdf |
+   gBdg fAdf |1 edef dABd | gBdg fAdf | edef d3 f :|2
+                edef dAAA | ABde fgaf | edef d2dc |
+|: d2af dafd | edaf dafd | ddBg dBgd | cdac dacd |
+   B2BA Bcde | f2f2 edBG | ABde fgaf |1 edef d2dc :|2 edef d2dB ||
 
 X:34
 T:Kari's Tune

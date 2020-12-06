@@ -1092,10 +1092,10 @@ K:G
  | bgg agf | gag edc | BAG ABc |1 A/B/A/G/F G2a :|2 A/B/A/G/F G3 |]
 
 X:31
-T:The Continuous Sound (x3) / Hyacinthe's Reel (x3)
+T:The Continuous Sound (x3) / Hyacinthe's Reel (x3) / Miss Le Goic (x3)
 R:Reel
 M:2/2
-Q:1/2=90
+Q:1/2=94
 K:C
 F2 F2 | F2 F2 |
 %
@@ -1130,6 +1130,25 @@ K:G
    G2BG DGBd | c2cB cdef | defd gefe |1 dcAc BGFA :|2 dcAc BGBd |
 |: g2fg accc | =fec=f eABc | f2df accc | ABcA BGBd |
    g2fg accc | =fec=f eABc | eaag ageg |1 fdcA BGBd :|2 fdcA BGFA |
+%
+% Miss Le Goic
+%
+K:A
+%
+|: EAA/A/A EAGA | ABAF ABce | c2BA FBBA | B2BA FBBA |
+   Bcde EAA/A/A | EAGA ABAF | ABce cBAF |1 EFAB A2GF :|2 EFAB A3f
+|: eAcA e2ef | eAcA Bcdf | eAcA Bgg/g/g | gfeB caa/a/a |
+   agfe eAcA | e2ef eAcA | Bcdf eAcA |1 BAGB A3f :|2 BAGB A2GF ||
+%
+|: EAA/A/A EAGA | ABAF ABce | c2BA FBBA | B2BA FBBA |
+   Bcde EAA/A/A | EAGA ABAF | ABce cBAF |1 EFAB A2GF :|2 EFAB A3f
+|: eAcA e2ef | eAcA Bcdf | eAcA Bgg/g/g | gfeB caa/a/a |
+   agfe eAcA | e2ef eAcA | Bcdf eAcA |1 BAGB A3f :|2 BAGB A2GF ||
+%
+|: EAA/A/A EAGA | ABAF ABce | c2BA FBBA | B2BA FBBA |
+   Bcde EAA/A/A | EAGA ABAF | ABce cBAF |1 EFAB A2GF :|2 EFAB A3f
+|: eAcA e2ef | eAcA Bcdf | eAcA Bgg/g/g | gfeB caa/a/a |
+   agfe eAcA | e2ef eAcA | Bcdf eAcA |1 BAGB A3f :|2 BAGB A2A2- | A8 ||
 %
 
 X:32
@@ -1215,4 +1234,48 @@ K:G
    d2de dBB/B/B | GABG AGEG | DGGF GABc |1 dBAc BGBc :|2 dBAc BGBd |
 |: gage d2ge | d2cA BGED | gage dged | cdef g2gf |
    gage d2ge | d2cA BGED | cdef gedB |1 cBAc BGBd :|2 cBAc BGBc |
+
+X:35
+T:Hyacinthe's Reel (x2)
+R:Reel
+M:2/2
+Q:1/2=90
+K:G
+| D4 D4 | D2 D2 D2 D2 |
+%
+|: G2BG DGBd | c2cB cdef | d2de fdge | fdcA BGFA |
+   G2BG DGBd | c2cB cdef | defd gefe |1 dcAc BGFA :|2 dcAc BGBd |
+|: g2fg accc | =fec=f eABc | f2df accc | ABcA BGBd |
+   g2fg accc | =fec=f eABc | eaag ageg |1 fdcA BGBd :|2 fdcA BGFA |
+%
+|: G2BG DGBd | c2cB cdef | d2de fdge | fdcA BGFA |
+   G2BG DGBd | c2cB cdef | defd gefe |1 dcAc BGFA :|2 dcAc BGBd |
+|: g2fg accc | =fec=f eABc | f2df accc | ABcA BGBd |
+   g2fg accc | =fec=f eABc | eaag ageg |1 fdcA BGBd :|2 fdcA BGFA |
+
+X:36
+T:Miss Le Goic (x3)
+C:François Champs
+Z:Gwen 2019-11-26
+R:Reel
+M:2/2
+Q:1/2=94
+K:A
+| E4 E4 | E2 E2 E2 E2 |
+%
+|: EAA/A/A EAGA | ABAF ABce | c2BA FBBA | B2BA FBBA |
+   Bcde EAA/A/A | EAGA ABAF | ABce cBAF |1 EFAB A2GF :|2 EFAB A3f
+|: eAcA e2ef | eAcA Bcdf | eAcA Bgg/g/g | gfeB caa/a/a |
+   agfe eAcA | e2ef eAcA | Bcdf eAcA |1 BAGB A3f :|2 BAGB A2GF ||
+%
+|: EAA/A/A EAGA | ABAF ABce | c2BA FBBA | B2BA FBBA |
+   Bcde EAA/A/A | EAGA ABAF | ABce cBAF |1 EFAB A2GF :|2 EFAB A3f
+|: eAcA e2ef | eAcA Bcdf | eAcA Bgg/g/g | gfeB caa/a/a |
+   agfe eAcA | e2ef eAcA | Bcdf eAcA |1 BAGB A3f :|2 BAGB A2GF ||
+%
+|: EAA/A/A EAGA | ABAF ABce | c2BA FBBA | B2BA FBBA |
+   Bcde EAA/A/A | EAGA ABAF | ABce cBAF |1 EFAB A2GF :|2 EFAB A3f
+|: eAcA e2ef | eAcA Bcdf | eAcA Bgg/g/g | gfeB caa/a/a |
+   agfe eAcA | e2ef eAcA | Bcdf eAcA |1 BAGB A3f :|2 BAGB A2A2- | A8 ||
+%
 

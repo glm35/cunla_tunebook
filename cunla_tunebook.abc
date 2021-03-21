@@ -455,12 +455,12 @@ X:33
 T:Castlerock Road
 C:Damien O'Kane
 Z:Gwen (2020-12)
-D:Brighde Chaimbeul, Ross Ainslie & Steven Byrnes live at Celtic Colours: https://www.youtube.com/watch?v=aiueVh23lUo (2019)
+D:Ross Ainslie, Brighde Chaimbeul & Steven Byrnes: https://www.youtube.com/watch?v=G8gDqZ_hW3k (2017)
+N:Tonalité originale en fa
 R:Reel
 M:2/2
 Q:1/2=120
 K:D
-%%MIDI transpose 3
 |: A2AG ABdf | edef dABd | gBdg fAdf |  e2ed cBAG |
    A3 G ABdf | edef dABd | gBdg fAdf |1 edef d2dB :|2 edef d3 f |
 |: gBdg fAdf | edef dABd | gBdg fed2- | dcAG ABdf |
@@ -470,8 +470,44 @@ K:D
    B2BA Bcde | f2f2 edBG | ABde fgaf |1 edef d2dc :|2 edef d2dB ||
 
 X:34
+T:Castlerock Road (F)
+C:Damien O'Kane
+Z:Gwen (2020-12)
+D:Ross Ainslie, Brighde Chaimbeul & Steven Byrnes: https://www.youtube.com/watch?v=G8gDqZ_hW3k (2017)
+R:Reel
+M:2/2
+Q:1/2=120
+K:F
+|: c2cB cdfa | gfga fcdf | bdfb acfa | g2gf edcB |
+   c3 B cdfa | gfga fcdf | bdfb acfa |1 gfga f2fd :|2 gfga f3 a |
+|: bdfb acfa | gfga fcdf | bdfb agf2- | fecB cdfa |
+   bdfb acfa |1 gfga fcdf | bdfb acfa | gfga f3 a :|2
+                gfga fccc | cdfg abc'a | gfga f2fe |
+|: f2c'a fc'af | gfc'a fc'af | ffdb fdbf | efc'e fc'ef |
+   d2dc defg | a2a2 gfdB | cdfg abc'a |1 gfga f2fe :|2 gfga f2fd ||
+
+X:35
+T:Castlerock Road (G)
+C:Damien O'Kane
+Z:Gwen (2020-12)
+D:Brighde Chaimbeul, Ross Ainslie & Steven Byrnes live at Celtic Colours: https://www.youtube.com/watch?v=aiueVh23lUo (2019)
+N:Tonalité originale en fa
+R:Reel
+M:2/2
+Q:1/2=120
+K:G
+|: DDBD DEGB | AGAB GDEG | cEGc BDGB | A2AB AGFE |
+   DDBD DEGB | AGAB GDEG | cEGc BDGB |1 AGAB G2GE :|2 AGAB G3 B |
+|: cEGc BDGB | AGAB GDEG | cEGc BAG2- | GFDC DEGB |
+   cEGc BDGB |1 AGAB GDEG | cEGc BDGB | AGAB G3 B :|2
+                AGAB GDDD | DEGA BcdB | AGAB G2GF |
+|: G2dB GdBG | AGdB GdBG | GGEc GEcG | FGdF GdFG |
+   E2ED EFGA | B2B2 AGEC | DEGA BcdB |1 AGAB G2GF :|2 AGAB G2GE ||
+
+X:36
 T:Kari's Tune
 T:Cross of Threads
+R:Reel
 C:Ross Ainslie
 D:Ross Ainslie: Vana (2020)
 Z:Cyrille 2020-11
@@ -484,4 +520,17 @@ K:D
 |: _eBBA B2fg | fe_e=e f2gf | a2gf e2fg | fe_e=e f2gf |
 |1 _eBBA B2fg | fe_e=e f2gf | a2fg- gef2 | faaf gef2 :|2
    _eBBA B2AG | AGED EAAG   | B2B2 AGED | E2E2 EGGD |
+
+X:37
+T:Song for Keo
+R:Reel
+C:François Champs
+Z:Gwen 2021-03
+M:2/2
+Q:1/2=90
+K:A
+|: BAAG A2BA | AGAB cAAG | A2cA AEFA | ded2- dEFA |
+   dedc BAGB | B/B/BB2 cde2- |1 efed cAeA | dAcA Bcde :|2 ecde cdEF | GABA Bcde
+|: FAde d3E  | FAde d2GB | ded2- dFGB | ded2 =GAdA |
+   cABA FAGB | B/B/BB2 cde2- |1 ecde cdEF | GABA Bcde :|2 efed cAeA | dAcA Bcde ||
 

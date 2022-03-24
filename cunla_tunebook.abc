@@ -622,3 +622,20 @@ K:C
 | "C" ecGc EGCD | EGc_B A_BGA | "F" FAde fdcd | "Em" BG^FG EGcd
 | "Am" ecGc EGCD | EGc_B "G"A_BGA | "F" FAdc BGed | "C" cGGG G^F=FE
 
+X:45
+T:Mazurka ++ (garder la 2e voix!)
+C:Francois Champs
+N:The 16.04.2011
+M:3/4
+L:1/8
+R:Mazurka
+K:D
+|: "A"A,3 AGF | "D"F2D2E2 | "G"G3 DEF | "A"E3 AGF
+| "D"F2D2CA, |"Em"B,2D2E2 | "G"G3DEF | "A"E3EB,C
+| "A"A,3 AGF | "D"F2D2E2 | "G"G3 DEF | "A"E3 AGF
+| "D"F2D2=C2 | "Em"B,2D2F2| "G"G3DEF | "A"E3-E3
+| "D"D3FG2 | A2A,2B,2 | "C"=C3FG2 | A2G,2A,2
+| "Em"B,3DEA | "G"G3AFD | "A"E3 DCE |A3GFE
+| "D"D3FG2 | A2A,2B,2 | "Am"=C3FG2 | A2G,2A,2
+| "Em"B,3DEA | "G"G3AFD | "A"E3 DCE |A3 EB,C:|
+

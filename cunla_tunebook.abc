@@ -75,6 +75,7 @@ K:D
 
 X:7
 T:The Lilting Fisherman
+R:Jig
 M:6/8
 K:G
 |: dBG GBd | g2g ege | dBG GFG | AFD cBc |
@@ -85,9 +86,8 @@ K:D
 
 X:8
 T:Mum's Jig
-R: jig
-M: 6/8
-L: 1/8
+R:Jig
+M:6/8
 K:Ador
 |: EAA ABc | B2A A2G | EAA ABc | B2B BAG |
    EAA ABc | B2A Agf | g2g gfe | dBG BAG :|
@@ -357,13 +357,15 @@ R:Waltz
 M:3/4
 K:A
 |: c2 cd cB | BA E2 A2 | c3 d c/B/A | e4 c2 |
-   d3 e dc | cB E2 e2 | g3 a gf | f2 e2 d2 |
+   d3 e dc | cB E2 B2 | g3 a gf | fg ef de |
    c2 cd cB | BA E2 A2 | c3 d c/B/A | e4 c2 |
    d2 b3 a | g2 B3 c | A3 B A2 |1 A4 ed :|2 A4 cd |
 |: e2 ef ec | fe c2 cd | e2 ef ec | a4 c2 |
-   d2 de d2 | b2 g2 e2 | B2 Bc BG | E2 e2 d2 |
+   d2 de d2 | b2 g2 e2 | B2 Bc BG |1 E2 c2 d2 |
+   e2 ef ec | fe c2 cd | e2 ef ec | a4 c2 |
+   d2 b3 a | g2 B3 c | A3 B A2 | A4 cd :|2 E2 e2 d2
    c2 cd cB | BA E2 A2 | c3 d c/B/A | e4 c2 |
-   d2 b3 a | g2 B3 c | A3 B A2 |1 A4 cd :|2 A4 ed ||
+   d2 b3 a | g2 B3 c | A3 B A2 | A4 ed ||
 
 X:27
 T:The Grey Buck

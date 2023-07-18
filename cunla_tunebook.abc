@@ -363,7 +363,7 @@ K:A
 |: e2 ef ec | fe c2 cd | e2 ef ec | a4 c2 |
    d2 de d2 | b2 g2 e2 | B2 Bc BG |1 E2 c2 d2 |
    e2 ef ec | fe c2 cd | e2 ef ec | a4 c2 |
-   d2 b3 a | g2 B3 c | A3 B A2 | A4 cd :|2 E2 e2 d2
+   d2 b3 a | g2 B3 c | A3 B A2 | A4 cd :|2 E2 e2 d2 |
    c2 cd cB | BA E2 A2 | c3 d c/B/A | e4 c2 |
    d2 b3 a | g2 B3 c | A3 B A2 | A4 ed ||
 
@@ -577,7 +577,7 @@ K:D
 |: DAdf e2df | e2df edBA | DAdf e2de | faaf gfed |
    DAdf e2df | e2df edBd | AGFA dfed |1 cdec d4  :|2 cdec d2ef |
 |: g2gf gfed | B2gf gfed | Affe fedB | A2fe fdef |
-   g2gf gfed | B2gf gfed | AGFA dfed |1 cdec d2ef :| cdec d/d/dd2 ||
+   g2gf gfed | B2gf gfed | AGFA dfed |1 cdec d2ef :|2 cdec d/d/dd2 ||
 
 X:42
 T:Thursday Night in the Caley
@@ -602,10 +602,10 @@ L:1/8
 R:Reel
 M:4/4
 K:G
-|:"G"GABc dGG^F|GDB,D G,B,DG|"F"=FGAB cBAG|"D"^FDDD ED^FD
-| "G"GABc dGG^F|GDB,D G,B,DG|"F"=FGAB "D"cBA^F|1"G"GBBB GBDB:|2"G"GBBB GABc
-|:"G"dgg^f gd"A"^cd|"G"BGG^F GAB=c|"Dm"A=ffe fdcd|A=ffe "D"fde^f
-| "G"dgg^f gd^cd|BGG^F GAB=c|"Dm"A=ffe fdcA|1"G"GBBB GABc:|2"G"GBBB GBDB:
+|:"G"GABc dGG^F|GDB,D G,B,DG|"F"=FGAB cBAG|"D"^FDDD ED^FD |
+| "G"GABc dGG^F|GDB,D G,B,DG|"F"=FGAB "D"cBA^F|1"G"GBBB GBDB:|2"G"GBBB GABc |
+|:"G"dgg^f gd"A"^cd|"G"BGG^F GAB=c|"Dm"A=ffe fdcd|A=ffe "D"fde^f |
+| "G"dgg^f gd^cd|BGG^F GAB=c|"Dm"A=ffe fdcA|1"G"GBBB GABc:|2"G"GBBB GBDB |
 
 X:44
 T:The Developement
@@ -675,7 +675,7 @@ R:Reel
 M:2/2
 K:D
 |: fedc BAFA | BddB cdeA | fedc BAFA | Bddc d2A/d/e |
-   fedc BAFA | BddB cBAF | GGGF GABd |1 cdef d3A :| cdef d3f ||
+   fedc BAFA | BddB cBAF | GGGF GABd |1 cdef d3A :|2 cdef d3f ||
 |: eAA/A/A cdea | fBFB d2f/e/d | eAAA cdeg | fedc A2de |
-   fedc BAFA | BddB cBAF | GGGF GABd |1 cdef d3f :| cdef d3A ||
+   fedc BAFA | BddB cBAF | GGGF GABd |1 cdef d3f :|2 cdef d3A ||
 
